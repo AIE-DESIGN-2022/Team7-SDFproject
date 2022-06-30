@@ -8,8 +8,7 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        resourceManager = GetComponentInChildren<ResourceManager>();
-        print(resourceManager.alloyCount + resourceManager.techChipCount + resourceManager.fuelCount);
+        resourceManager = GetComponent<ResourceManager>();
     }
 
     // Update is called once per frame
