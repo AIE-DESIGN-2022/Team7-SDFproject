@@ -19,9 +19,9 @@ MonoBehaviour:
   factionName: 1
   NPC_type: 1
   NPC_typePrefab:
-  - {fileID: 6017937369128084383, guid: f2c1ba92053ed594a8ffa0953d87a905, type: 3}
-  - {fileID: 6017937369128084383, guid: 7f2101f487b107c4ebacd20f3de8e4fa, type: 3}
-  - {fileID: 6017937369128084383, guid: 60fec68250a043848a3eb7aa43b566df, type: 3}
+  - {fileID: 6017937369128084383, guid: 39e6c2b261015674ab75a9c0f04bbfbd, type: 3}
+  - {fileID: 6017937369128084383, guid: 9750bc0a9a15caf43827c9c3fa860a1e, type: 3}
+  - {fileID: 6017937369128084383, guid: 90768cbcbf1754c429e4b7bea509d4cf, type: 3}
   quests:
   - {fileID: 11400000, guid: 79b8ea08d2d483643bb38174e4365aa3, type: 2}
   - {fileID: 11400000, guid: e21ab9ed41eb3de44b0430e81a252854, type: 2}
