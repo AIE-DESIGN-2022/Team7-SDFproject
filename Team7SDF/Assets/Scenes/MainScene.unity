@@ -464,6 +464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResourceUI_Overlay
       objectReference: {fileID: 0}
+    - target: {fileID: 1328392353177777083, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1328392353177777095, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -565,6 +569,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1328392354473526297, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328392354704675808, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
       propertyPath: m_text
       value: 
       objectReference: {fileID: 0}
@@ -988,6 +996,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1364742405}
+  - component: {fileID: 1364742406}
   m_Layer: 0
   m_Name: NPC's
   m_TagString: Untagged
@@ -1010,6 +1019,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1364742406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364742404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686a54c83d0a5ee48b499832700644f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC_list:
+  - {fileID: 11400000, guid: b48b11495319eea4883e020f081e86fa, type: 2}
+  - {fileID: 11400000, guid: da61a0698aae60b45aa06333fe59a55f, type: 2}
+  NPCprefab: {fileID: 5785598500946376725, guid: 07162208d4372a34eb8aae00166b9bda, type: 3}
 --- !u!1 &1413220477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,9 +1344,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7909646102560878034, guid: ae297d72bd154b94daa0578282c1bfa4, type: 3}
+      propertyPath: npcs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909646102560878034, guid: ae297d72bd154b94daa0578282c1bfa4, type: 3}
       propertyPath: resourceManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7909646102560878034, guid: ae297d72bd154b94daa0578282c1bfa4, type: 3}
+      propertyPath: npcs.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0293a3bad86afff4b85d1b51d31a790f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae297d72bd154b94daa0578282c1bfa4, type: 3}
 --- !u!1001 &6963492633688848288

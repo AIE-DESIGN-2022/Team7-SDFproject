@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4806e592a852dba4cb9508131fae72b2, type: 3}
+  m_Name: NPC Villager
+  m_EditorClassIdentifier: 
+  NPC_name:
+  - Jeff
+  - Tyler
+  - Rhys
+  factionName: 0
+  NPC_type: []
+  NPC_typePrefab:
+  - {fileID: 6017937369128084383, guid: f2c1ba92053ed594a8ffa0953d87a905, type: 3}
+  - {fileID: 6017937369128084383, guid: 7f2101f487b107c4ebacd20f3de8e4fa, type: 3}
+  - {fileID: 6017937369128084383, guid: 60fec68250a043848a3eb7aa43b566df, type: 3}
+  quests:
+  - {fileID: 11400000, guid: f1e8f11508307b843a0d237be332df3b, type: 2}
+  - {fileID: 11400000, guid: 5d96f7fba1e69ec4c9c33b0306c547ec, type: 2}
+  - {fileID: 11400000, guid: 3739f991cf7a1f64a9ec3fa6cb41bb68, type: 2}

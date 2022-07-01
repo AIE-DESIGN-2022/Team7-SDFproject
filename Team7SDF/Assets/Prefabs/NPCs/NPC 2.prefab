@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3078172044277641912}
   - component: {fileID: 1761311053624013968}
   - component: {fileID: 6841159630592058916}
+  - component: {fileID: -212192684532830885}
   m_Layer: 0
   m_Name: NPC 2
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ed2630575b0864542bcb45f27f8fd241, type: 2}
+  - {fileID: 2100000, guid: d08f9bed3f0664e4cbd82a506dc0afaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,3 +97,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-212192684532830885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6017937369128084383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686a54c83d0a5ee48b499832700644f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcs: []
