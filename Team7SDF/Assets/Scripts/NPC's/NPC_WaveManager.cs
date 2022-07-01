@@ -5,22 +5,26 @@ using UnityEngine;
 public class NPC_WaveManager : MonoBehaviour
 {
     public NPC_Waves nPC_Waves;
-    private NPC_manager nPC_Manager;
+    public NPC_manager nPC_Manager;
 
-    private bool waveStarted = true;
-    private int waveCount = 1;
+    private bool waveStarted = false;
+    public int waveCount = 0;
 
-    public float spawnRate = 0.5f;
+    public float spawnRate = 0;
     private float spawnTimer = 0;
 
     private int spawnedNPCs = 0;
-    private int nPCsToSpawn = 3;
+    private int nPCsToSpawn = 5;
+
+    public bool LastWaveSpawned;
 
     public List<GameObject> currentWave = new List<GameObject>();
     public  NPC_Waves[] NPC_Waves;
     // Start is called before the first frame update
     void Start()
+       
     {
+        LastWaveSpawned = true;
         NPC_Waves = (NPC_Waves[])Resources.LoadAll<NPC_Waves>("");
         nPC_Manager = FindObjectOfType<NPC_manager>();
     }
@@ -29,22 +33,34 @@ public class NPC_WaveManager : MonoBehaviour
     void Update()
     {
         //CreateWave(waveCount);
+        CreateWave(waveCount);
+        if (waveStarted)
+        {
         SpawnWave();
+
+        }
+       
         CheckIfWaveFinished();
-    }
+    } 
 
     private void CreateWave(int waveNumber)
     {
-        nPCsToSpawn = NumberOfNPCs(waveNumber);
+        if (LastWaveSpawned)
+        {
+
+        nPCsToSpawn = 3;
         spawnedNPCs = 0;
         waveStarted = true;
+        waveCount++;
         Debug.Log("Wave created");
+        LastWaveSpawned = false;
+        }
 
     }
-    private int NumberOfNPCs(int waveNumber)
+   /* private int NumberOfNPCs(int waveNumber)
     {
         return 1 + (waveNumber - 1);
-    }
+    }*/
 
     private void SpawnWave()
     {
@@ -53,10 +69,10 @@ public class NPC_WaveManager : MonoBehaviour
             spawnTimer += Time.deltaTime;
             if (spawnTimer > spawnRate)
             {
-                Debug.Log("Wave Spawned");
                 currentWave.Add(nPC_Manager.NPCspawn());
                 spawnedNPCs++;
                 spawnTimer = 0;
+                //Debug.Log("Wave Spawned");
             }
 
         }
@@ -69,8 +85,11 @@ public class NPC_WaveManager : MonoBehaviour
         if (waveStarted && spawnedNPCs == nPCsToSpawn)
         {
             waveStarted = false;
-            waveCount++;
-            Debug.Log("Wave Finished");
+            Debug.Log("Wave Finished Spawning NPCs");
+            LastWaveSpawned = true;
+            currentWave.Clear();
+
+
         }
     }
     public void NPCfinished(GameObject npc)
