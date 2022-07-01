@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
-  m_Name: GigaChad quest 2
+  m_Name: Faction A Q2
   m_EditorClassIdentifier: 
-  rewardAmount: 20
-  cost: 10
+  rewardAmount: 10
+  cost: 5
+  questTitle: Quest A 2
+  questDescription: Quest A 2 Description

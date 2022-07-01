@@ -8,4 +8,7 @@ public class QuestsScriptableObject : ScriptableObject
     public int rewardAmount;
     public int cost;
 
+    public string questTitle;
+    public string questDescription;
+
 }
