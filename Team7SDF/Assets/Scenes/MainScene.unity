@@ -237,7 +237,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6963492632703135441, guid: ecda74461513707469f179e546648c47, type: 3}
       propertyPath: m_Name
-      value: planet (1)
+      value: Moon
       objectReference: {fileID: 0}
     - target: {fileID: 6963492632703135442, guid: ecda74461513707469f179e546648c47, type: 3}
       propertyPath: m_RootOrder
