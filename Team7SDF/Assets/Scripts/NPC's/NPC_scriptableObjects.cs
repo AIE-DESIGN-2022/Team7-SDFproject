@@ -9,12 +9,20 @@ public enum FactionType
     FactionB
 }
 
+public enum UnitType
+{
+    Villager,
+    Military,
+    Trader,
+    Scientist
+}
+
 [CreateAssetMenu(fileName = "NPC template", menuName = "ScriptableObjects/NPC", order = 1)]
 public class NPC_scriptableObjects : ScriptableObject
 {
     public string[] NPC_name;
     public FactionType factionName;
-    public string[] NPC_type;
+    public UnitType NPC_type;
 
     public GameObject[] NPC_typePrefab;
 

@@ -7,6 +7,7 @@ public class NPC_manager : MonoBehaviour
     public NPC_scriptableObjects[] NPC_list;
     private NPC_scriptableObjects currentNPC;
     public GameObject NPCprefab;
+    public Transform spawnPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +15,7 @@ public class NPC_manager : MonoBehaviour
 
         currentNPC = NPC_list[Random.Range(0, NPC_list.Length)];
         
-        GameObject clone = Instantiate(NPCprefab);
+        GameObject clone = Instantiate(NPCprefab,spawnPosition.position, spawnPosition.rotation);
         clone.GetComponent<NPC_object>().currentNpc = currentNPC;
     }
 
