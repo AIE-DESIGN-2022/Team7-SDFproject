@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a81eee344120a49a026cc80390d3e6, type: 3}
   m_Name: NPC_Waves
   m_EditorClassIdentifier: 
-  NPCList: []
+  NPCList:
+  - {fileID: 11400000, guid: da61a0698aae60b45aa06333fe59a55f, type: 2}
+  - {fileID: 11400000, guid: 31c9994bc08c50545b1d29b4f5e96054, type: 2}
+  - {fileID: 11400000, guid: 340959434028f4e42b101a975af7009d, type: 2}
+  - {fileID: 11400000, guid: b48b11495319eea4883e020f081e86fa, type: 2}
