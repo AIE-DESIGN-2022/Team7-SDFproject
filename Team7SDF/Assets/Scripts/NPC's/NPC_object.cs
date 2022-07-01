@@ -22,9 +22,9 @@ public class NPC_object : MonoBehaviour
         Instantiate(PrefabNPC, transform.position, transform.rotation, transform);
 
 
-        Debug.Log(currentQuest.rewardAmount);
-        Debug.Log(currentQuest.questTitle);
-        Debug.Log(currentQuest.questDescription);
+        //Debug.Log(currentQuest.rewardAmount);
+        //Debug.Log(currentQuest.questTitle);
+        //Debug.Log(currentQuest.questDescription);
     }
 
     // Update is called once per frame
