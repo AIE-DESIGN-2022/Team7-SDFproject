@@ -15,6 +15,7 @@ EditorUserSettings:
       value: 2242470311464677080f021607265a1e5932002b21382a353e662e30e7ee312badd737fdef092f30300cea2f4a2b0f36e613
       flags: 0
     RecentlyUsedScenePath-3:
+<<<<<<< HEAD
       value: 2242470311464677080f021607265a1e5932002b21382a353e662e30e7ee312badd333faf333313b0c0ce628303b122be1441c05ff1f13
       flags: 0
     RecentlyUsedScenePath-4:
@@ -34,6 +35,15 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedScenePath-9:
       value: 22424703114646680e0b0227036c6a3956241b2f222d68252320092a
+=======
+      value: 224247031146466b020215251f2d6c131f3111193c292535621a1e36ece52777c6e23be6d81331283c10e63316701431fb1e10
+      flags: 0
+    RecentlyUsedScenePath-4:
+      value: 224247031146466b020215251f2d6c131f3111193c292535621a1e36ece52777c6e23be6d81f27283c10e63316701431fb1e10
+      flags: 0
+    RecentlyUsedScenePath-5:
+      value: 22424703114646680e0b0227036c73150012140e293b2f372367083debf42d
+>>>>>>> origin/Eloise
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
