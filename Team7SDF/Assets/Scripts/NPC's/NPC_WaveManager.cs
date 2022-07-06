@@ -20,6 +20,7 @@ public class NPC_WaveManager : MonoBehaviour
 
     public List<GameObject> currentWave = new List<GameObject>();
     public  NPC_Waves[] NPC_Waves;
+    public bool isInteractingWithQuest;
     // Start is called before the first frame update
     void Start()
        
