@@ -19,9 +19,8 @@ public class NotificationTween : MonoBehaviour
     public float reset;
     public LeanTweenType easeType;
 
-    void Start()
+    public void OnEnable()
     {
-        //LeanTween.scale(gameObject, new Vector3(0, 0, 0), 0.5f).setOnComplete(DestroyMe);
         LeanTween.moveY(gameObject, distanceY, durationY).setDelay(delay).setEase(easeType).setOnComplete(FadeOut);
         LeanTween.moveX(gameObject, distanceX, durationX).setDelay(delay).setEase(easeType).setOnComplete(OnComplete);
     }
