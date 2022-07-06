@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8567981933177812614}
   - component: {fileID: 1393262225582131550}
   - component: {fileID: 601144639642928471}
+  - component: {fileID: 2143236596}
   m_Layer: 5
   m_Name: Titainium Alloy Backdrop
   m_TagString: Untagged
@@ -92,6 +93,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Titainium Alloy
   content: The very foundation of construction, required for construction projects.
+--- !u!114 &2143236596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25592825274663311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0081e098dddcf345b5abe97506857e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.1
+  delay: 0.2
+  addSize: 1.05
+  shakeLeft: 955
+  shakeRight: 965
+  reset: 960
 --- !u!1 &1328392352745001695
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,6 +198,7 @@ GameObject:
   - component: {fileID: 1328392352747267138}
   - component: {fileID: 1328392352747267139}
   - component: {fileID: 6332764206155427196}
+  - component: {fileID: 1051497298133276815}
   m_Layer: 5
   m_Name: Currency Backdrop
   m_TagString: Untagged
@@ -204,8 +224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -707.0858, y: 378.7757}
-  m_SizeDelta: {x: -1905, y: -775.19}
+  m_AnchoredPosition: {x: -707.5, y: 377.5}
+  m_SizeDelta: {x: -1905, y: -775}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1328392352747267138
 CanvasRenderer:
@@ -259,6 +279,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Spice
   content: The basis of economy.
+--- !u!114 &1051497298133276815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328392352747267137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0081e098dddcf345b5abe97506857e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.1
+  delay: 0.2
+  addSize: 1.05
+  shakeLeft: 247.5
+  shakeRight: 257.5
+  reset: 252.5
 --- !u!1 &1328392352748379203
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +644,7 @@ GameObject:
   - component: {fileID: 1328392353880593189}
   - component: {fileID: 1328392353880593178}
   - component: {fileID: 8205275382017142492}
+  - component: {fileID: 1864507564094236474}
   m_Layer: 5
   m_Name: Pop Happiness Backdrop
   m_TagString: Untagged
@@ -631,8 +670,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -807.0858, y: 378.7757}
-  m_SizeDelta: {x: -1905, y: -775.19}
+  m_AnchoredPosition: {x: -807.5, y: 377.5}
+  m_SizeDelta: {x: -1905, y: -775}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1328392353880593189
 CanvasRenderer:
@@ -686,6 +725,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Population Happiness
   content: Keep the populace happy, or that throne may not be yours for much longer.
+--- !u!114 &1864507564094236474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328392353880593176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0081e098dddcf345b5abe97506857e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.1
+  delay: 0.2
+  addSize: 1.05
+  shakeLeft: 147.5
+  shakeRight: 157.5
+  reset: 152.5
 --- !u!1 &1328392353961213969
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +833,7 @@ GameObject:
   - component: {fileID: 1328392354128365702}
   - component: {fileID: 1328392354128365703}
   - component: {fileID: 4366478811456181593}
+  - component: {fileID: 2306932008694339901}
   m_Layer: 5
   m_Name: Research Backdrop
   m_TagString: Untagged
@@ -801,8 +859,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -607.0858, y: 378.7757}
-  m_SizeDelta: {x: -1905, y: -775.19}
+  m_AnchoredPosition: {x: -607.5, y: 377.5}
+  m_SizeDelta: {x: -1905, y: -775}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1328392354128365702
 CanvasRenderer:
@@ -856,6 +914,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Research
   content: Aquired for the sole purpose of advancing the empire.
+--- !u!114 &2306932008694339901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328392354128365701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0081e098dddcf345b5abe97506857e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.1
+  delay: 0.2
+  addSize: 1.05
+  shakeLeft: 347.5
+  shakeRight: 357.5
+  reset: 352.5
 --- !u!1 &1328392354131783233
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +944,7 @@ GameObject:
   - component: {fileID: 1328392354131783234}
   - component: {fileID: 1328392354131783235}
   - component: {fileID: 4601012890971863895}
+  - component: {fileID: 718097263646592563}
   m_Layer: 5
   m_Name: Pop Backdrop
   m_TagString: Untagged
@@ -893,8 +970,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -907.0859, y: 378.7757}
-  m_SizeDelta: {x: -1905, y: -775.19}
+  m_AnchoredPosition: {x: -907.5, y: 377.5}
+  m_SizeDelta: {x: -1905, y: -775}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1328392354131783234
 CanvasRenderer:
@@ -948,6 +1025,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Population
   content: These are you peeps.
+--- !u!114 &718097263646592563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328392354131783233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0081e098dddcf345b5abe97506857e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.1
+  delay: 0.2
+  addSize: 1.05
+  shakeLeft: 47.5
+  shakeRight: 57.5
+  reset: 52.5
 --- !u!1 &1328392354152494514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,7 +1991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1097, y: -45}
+  m_AnchoredPosition: {x: -1160, y: -99}
   m_SizeDelta: {x: 250.194, y: 70.9359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &821452546260599474
@@ -1965,7 +2060,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   startingX: -200
-  startingY: 100
+  startingY: 400
   distanceX: 150
   durationX: 0.7
   distanceY: 875
@@ -2011,7 +2106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1097, y: -45}
+  m_AnchoredPosition: {x: -1160, y: -99}
   m_SizeDelta: {x: 250.194, y: 70.9359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3787700023320778856
@@ -2080,7 +2175,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   startingX: -200
-  startingY: 100
+  startingY: 400
   distanceX: 150
   durationX: 0.7
   distanceY: 775
@@ -2126,7 +2221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1097, y: -45}
+  m_AnchoredPosition: {x: -1160, y: -99}
   m_SizeDelta: {x: 250.194, y: 70.9359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7647605016632873901
@@ -2195,7 +2290,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   startingX: -200
-  startingY: 100
+  startingY: 400
   distanceX: 150
   durationX: 0.7
   distanceY: 675
@@ -2241,7 +2336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1097, y: -45}
+  m_AnchoredPosition: {x: -1160, y: -99}
   m_SizeDelta: {x: 250.194, y: 70.9359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2445163058662887020
@@ -2298,7 +2393,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   startingX: -200
-  startingY: 100
+  startingY: 400
   distanceX: 150
   durationX: 0.7
   distanceY: 575
@@ -3469,6 +3564,7 @@ GameObject:
   - component: {fileID: 1602265241776899430}
   - component: {fileID: 384647703084751087}
   - component: {fileID: 4566064576124265330}
+  - component: {fileID: 1892000642}
   m_Layer: 5
   m_Name: Fuel Backdrop
   m_TagString: Untagged
@@ -3549,6 +3645,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Fuel
   content: required to maintain a fleet and is consumed whenever ships are sent off.
+--- !u!114 &1892000642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8389423856509512477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0081e098dddcf345b5abe97506857e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.1
+  delay: 0.2
+  addSize: 1.05
+  shakeLeft: 1315
+  shakeRight: 1325
+  reset: 1320
 --- !u!1 &8493503758942475397
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,6 +3675,7 @@ GameObject:
   - component: {fileID: 7318453726876859624}
   - component: {fileID: 5056960189857870502}
   - component: {fileID: 7063495971529723353}
+  - component: {fileID: 934944896}
   m_Layer: 5
   m_Name: Silicone Chip Backdrop
   m_TagString: Untagged
@@ -3641,6 +3756,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Silicone Chips
   content: Necessary for making new technology.
+--- !u!114 &934944896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8493503758942475397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0081e098dddcf345b5abe97506857e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.1
+  delay: 0.2
+  addSize: 1.05
+  shakeLeft: 595
+  shakeRight: 605
+  reset: 600
 --- !u!1 &8578485751400594244
 GameObject:
   m_ObjectHideFlags: 0
