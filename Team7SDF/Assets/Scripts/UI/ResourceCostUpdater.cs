@@ -30,15 +30,15 @@ public class ResourceCostUpdater : MonoBehaviour
 
         if (resourceCount == 1)
         {
-            layoutElement.minWidth = 0;
+            layoutElement.minWidth = 172;
         }
         else if (resourceCount == 2)
         {
-            layoutElement.minWidth = 1.81f;
+            layoutElement.minWidth = 360;
         }
         else if (resourceCount == 3)
         {
-            layoutElement.minWidth = 2.65f;
+            layoutElement.minWidth = 576;
         }
     }
 }
