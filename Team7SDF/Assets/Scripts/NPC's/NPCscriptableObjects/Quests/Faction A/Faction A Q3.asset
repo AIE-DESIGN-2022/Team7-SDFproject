@@ -16,3 +16,11 @@ MonoBehaviour:
   cost: 5
   questTitle: Quest A 3
   questDescription: Quest A 3 Description
+  doesQuestHaveRequirments: 0
+  chipRequirment: 0
+  alloyRequirment: 0
+  fuelRequirment: 0
+  populationConsequence: 0
+  happinessConsequence: 0
+  researchConsequence: 0
+  currencyConsequence: 0

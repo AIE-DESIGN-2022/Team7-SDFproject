@@ -10,5 +10,20 @@ public class QuestsScriptableObject : ScriptableObject
 
     public string questTitle;
     public string questDescription;
+    public bool doesQuestHaveRequirments;
+    //if quest has reqirments 
+    public int chipRequirment;
+    public int alloyRequirment;
+    public int fuelRequirment;
+
+    public int populationConsequence;
+    public float happinessConsequence;
+    public int researchConsequence;
+    public int currencyConsequence;
+
+
+
+
 
 }
+

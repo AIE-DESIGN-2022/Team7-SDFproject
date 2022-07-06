@@ -17,7 +17,7 @@ public enum eNPCstate
     None
 
 }
-public class NPCnavigation : MonoBehaviour
+public class NPC_navigation : MonoBehaviour
 {
 
     public eNPCstate nPC_state;
@@ -146,6 +146,7 @@ public class NPCnavigation : MonoBehaviour
         {
             isNPC_active = false;
             Destroy(transform.parent.gameObject);
+            waveManager.NPCfinished(transform.parent.gameObject);
         }
 
     }
@@ -161,7 +162,7 @@ public class NPCnavigation : MonoBehaviour
         {
             foreach (RaycastHit hit in hits)
             {
-                NPCnavigation npc = hit.transform.gameObject.GetComponent<NPCnavigation>();
+                NPC_navigation npc = hit.transform.gameObject.GetComponent<NPC_navigation>();
                 if (npc != null)
                 {
                     return false;
@@ -170,7 +171,7 @@ public class NPCnavigation : MonoBehaviour
         }
         else
         {
-            print(name + "not getting any hits");
+            //print(name + "not getting any hits");
         }
         return true;
     }
