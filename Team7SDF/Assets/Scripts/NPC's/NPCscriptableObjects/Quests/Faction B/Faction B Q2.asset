@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewardAmount: 30
   cost: 15
-  questline: 0
   questTitle: Quest B 2
   questDescription: Quest B 2 Desciption
   chipRequirment: 0
@@ -44,3 +43,30 @@ MonoBehaviour:
   - Y
   - Y
   - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - N
+  - N
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - N
+  - Y
+  - Y
+  - N
+  - Y
+  - N

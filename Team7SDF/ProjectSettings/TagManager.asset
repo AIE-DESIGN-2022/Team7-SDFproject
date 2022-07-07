@@ -9,6 +9,7 @@ TagManager:
   - Exit
   - Despawn
   - Spawn
+  - InteractingNPC
   layers:
   - Default
   - TransparentFX

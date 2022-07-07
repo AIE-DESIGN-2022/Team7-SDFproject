@@ -8,14 +8,16 @@ public class QuestsScriptableObject : ScriptableObject
     public int rewardAmount;
     public int cost;
 
-    public enum QuestLine
+    /*public enum QuestLine
     {
         QuestlineA,
         QuestLineB,
         QuestlineC
     }
+    */
 
-    public QuestLine questline;
+
+    //public QuestLine questline;
 
     public string questTitle;
     public string questDescription;

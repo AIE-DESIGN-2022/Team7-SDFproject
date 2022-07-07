@@ -60,7 +60,7 @@ public class NPC_WaveManager : MonoBehaviour
             spawnedNPCs = 0;
             waveStarted = true;
             waveCount++;
-            Debug.Log("Wave created");
+            //Debug.Log("Wave created");
             LastWaveSpawned = false;
         }
 
@@ -94,7 +94,7 @@ public class NPC_WaveManager : MonoBehaviour
         {
             npcDialogueTracker.npcCount = 0;
             waveStarted = false;
-            Debug.Log("Wave Finished Spawning NPCs");
+            //Debug.Log("Wave Finished Spawning NPCs");
             LastWaveSpawned = true;
             currentWave.Clear();
 
@@ -115,7 +115,7 @@ public class NPC_WaveManager : MonoBehaviour
     public void NPCfinished(GameObject npc)
     {
         currentWave.Remove(npc);
-        Debug.Log("NPC removed from wave");
+        //Debug.Log("NPC removed from wave");
     }
     public int WaveCount { get { return waveCount; } }
 }

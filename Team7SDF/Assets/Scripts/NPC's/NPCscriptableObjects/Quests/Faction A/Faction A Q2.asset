@@ -16,3 +16,40 @@ MonoBehaviour:
   cost: 5
   questTitle: Quest A 2
   questDescription: Quest A 2 Description
+  chipRequirment: 0
+  alloyRequirment: 10
+  fuelRequirment: 0
+  populationConsequence: 0
+  happinessConsequence: 0
+  researchConsequence: 0
+  currencyConsequence: 0
+  IsPlayerAnswered: 1
+  PlayerResponse:
+  - Y
+  - Y
+  - Y
+  - N
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - Y
+  - N
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y

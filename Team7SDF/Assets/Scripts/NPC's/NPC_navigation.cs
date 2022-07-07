@@ -35,6 +35,7 @@ public class NPC_navigation : MonoBehaviour
     public GameObject exitPoint;
     public GameObject despawnPoint;
     public GameObject stepBack;
+    public GameObject CurrentQuestGivingNPC;
 
     public float stoppingRange;
     public float stepBackDistance;
@@ -44,6 +45,8 @@ public class NPC_navigation : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+
+
 
         spawnPoint = GameObject.FindGameObjectWithTag("Spawn");
         waitPoint = GameObject.FindGameObjectWithTag("Wait");
@@ -130,6 +133,8 @@ public class NPC_navigation : MonoBehaviour
 
             if (!isNPC_active) return;
             SetNPCstate(eNPCstate.Interaction);
+            FindObjectOfType<NpcDialogueTracker>().trackedNPC = CurrentQuestGivingNPC;
+
 
         }
 
@@ -166,7 +171,7 @@ public class NPC_navigation : MonoBehaviour
         
         if (hits.Length > 0)
         {
-            print(name + " hits");
+            //print(name + " hits");
             foreach (RaycastHit hit in hits)
             {
                 NPC_navigation npc = hit.transform.gameObject.GetComponent<NPC_navigation>();
@@ -212,16 +217,24 @@ public class NPC_navigation : MonoBehaviour
             case eNPCstate.Interaction:
                 isNPC_InteractionPointOccupied = true;
                 target = gameObject;
-/*                if (isNPC_InteractionCompleted)
-                {
-                    SetNPCstate(eNPCstate.MoveTowardsExitPoint);
-                }*/
-                
+                transform.parent.tag = "InteractingNPC";
+                gameObject.tag = "InteractingNPC";
+                FindObjectOfType<NpcDialogueTracker>().dialogueBox.SetActive(true);
+                FindObjectOfType<PlayerInteractionManager>().responceBox.SetActive(true);
+                /*                if (isNPC_InteractionCompleted)
+                                {
+                                    SetNPCstate(eNPCstate.MoveTowardsExitPoint);
+                                }*/
+
 
 
                 break;
 
             case eNPCstate.MoveTowardsExitPoint:
+                transform.parent.tag = "Untagged";
+                gameObject.tag = "Untagged";
+                FindObjectOfType<NpcDialogueTracker>().dialogueBox.SetActive(false);
+                FindObjectOfType<PlayerInteractionManager>().responceBox.SetActive(false);
                 target = despawnPoint;
                 isNPC_InteractionCompleted = true;
                 if (!isNPC_InteractionPointOccupied && isNPC_InteractionCompleted && this.transform.position != target.transform.position)

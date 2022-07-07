@@ -14,5 +14,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewardAmount: 45
   cost: 15
+  questline: 0
   questTitle: Quest B 3
   questDescription: Quest B 3 Desciption
+  chipRequirment: 0
+  alloyRequirment: 0
+  fuelRequirment: 10
+  populationConsequence: 0
+  happinessConsequence: 0
+  researchConsequence: 0
+  currencyConsequence: 0
+  IsPlayerAnswered: 1
+  PlayerResponse:
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y

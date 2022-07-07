@@ -20,6 +20,7 @@ public class NpcDialogueTracker : MonoBehaviour
     NPC_object npcObject;
     NPC_navigation npcNavigation;
     NPC_WaveManager npcWaveManager;
+    public ResourceCostUpdater npcResourceCostUpdater;
     public PlayerInteractionManager playerInteractionManager;
 
     void Start()
@@ -30,13 +31,15 @@ public class NpcDialogueTracker : MonoBehaviour
         npcManager = FindObjectOfType<NPC_manager>();
         npcObject = FindObjectOfType<NPC_object>();
         npcNavigation = FindObjectOfType<NPC_navigation>();
+        npcResourceCostUpdater = FindObjectOfType<ResourceCostUpdater>();
 
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (npcManager.clone != null)
+        if (GameObject.FindGameObjectWithTag("InteractingNPC") != null)
         {
 
             GetCurrentNpcData();
@@ -46,26 +49,26 @@ public class NpcDialogueTracker : MonoBehaviour
 
     public void GetCurrentNpcData()
     {
-        trackedNPC = npcWaveManager.currentWave[npcCount];
+        trackedNPC = GameObject.FindGameObjectWithTag("InteractingNPC");
 
         if (trackedNPC.GetComponentInChildren<NPC_navigation>().isNPC_InteractionPointOccupied == true)
         {
-            if (trackedNPC.GetComponentInChildren<NPC_navigation>().isNPC_InteractionPointOccupied == false)
-            {
-                return;
-            }
-            else
-            {
-                npcName.text = trackedNPC.GetComponentInChildren<NPC_object>().nameText;
-                dialogueText.text = trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.questDescription;
 
-                dialogueBox.SetActive(true);
-                playerInteractionManager.responceBox.SetActive(true);
 
-                Debug.Log(trackedNPC);
-                Debug.Log(dialogueText.text);
-                Debug.Log(npcName.text);
-            }
+
+            npcName.text = trackedNPC.GetComponentInChildren<NPC_object>().nameText;
+            dialogueText.text = trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.questDescription;
+            npcResourceCostUpdater.QuestResourceRequirements();
+
+
+
+            //dialogueBox.SetActive(true);
+            //playerInteractionManager.responceBox.SetActive(true);
+
+            //Debug.Log(trackedNPC);
+            //Debug.Log(dialogueText.text);
+            //Debug.Log(npcName.text);
+
 
         }
         else
