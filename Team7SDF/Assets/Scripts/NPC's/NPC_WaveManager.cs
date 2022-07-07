@@ -8,9 +8,9 @@ public class NPC_WaveManager : MonoBehaviour
     public NPC_manager nPC_Manager;
 
     private bool waveStarted = false;
+    public int yearCount = 1;
     public int waveCount = 0;
-    public float timeBetweenWaves = 1;
-    public float timeBetweenWavesTimer = 0;
+
 
     public float spawnRate = 0;
     private float spawnTimer = 0;
@@ -46,6 +46,7 @@ public class NPC_WaveManager : MonoBehaviour
         }
 
         CheckIfWaveFinished();
+        CheckIfYearFinished();
     }
 
     private void CreateWave(int waveNumber)
@@ -98,6 +99,16 @@ public class NPC_WaveManager : MonoBehaviour
         }
     }
 
+    private void CheckIfYearFinished()
+    {
+        if (waveCount == 3 && spawnedNPCs == nPCsToSpawn && currentWave.Count == 0)
+        {
+            yearCount++;
+            waveCount = 0;
+
+            //pause for end of year statistics
+        }
+    }
     public void NPCfinished(GameObject npc)
     {
         currentWave.Remove(npc);

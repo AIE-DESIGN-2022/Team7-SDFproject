@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: db450cfbc6ff00d419682f35db11b57e
+=======
+guid: e282d4c0e76f92d428f4bd654dda89ca
+>>>>>>> NPCnavigation
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

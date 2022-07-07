@@ -769,11 +769,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.x
+<<<<<<< HEAD
+      value: 0.00052083336
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.7925852
+=======
       value: -0.53489584
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.y
       value: 0.98897797
+>>>>>>> origin/Matt/Dialogue_Box
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -785,11 +793,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.x
+<<<<<<< HEAD
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 791
+=======
       value: -1027
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 987
+>>>>>>> origin/Matt/Dialogue_Box
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649475255877, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -946,10 +962,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nPC_Waves: {fileID: 11400000, guid: 09825d17df3c3f6499c5022d52a06606, type: 2}
   nPC_Manager: {fileID: 1364742406}
+  yearCount: 1
   waveCount: 0
+<<<<<<< HEAD
+  spawnRate: 10
+=======
   timeBetweenWaves: 1
   timeBetweenWavesTimer: 0
   spawnRate: 1
+>>>>>>> origin/Matt/Dialogue_Box
   LastWaveSpawned: 0
   currentWave: []
   NPC_Waves:
@@ -1100,6 +1121,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1333221298617245077, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
       propertyPath: m_SizeDelta.x
+<<<<<<< HEAD
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333221298617245077, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
+      propertyPath: m_SizeDelta.y
+=======
       value: 576
       objectReference: {fileID: 0}
     - target: {fileID: 1333221298617245077, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
@@ -1120,6 +1147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9186005215785866928, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
       propertyPath: m_IsActive
+>>>>>>> origin/Matt/Dialogue_Box
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
