@@ -751,11 +751,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.015104166
+      value: 0.00052083336
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.28456914
+      value: 0.7925852
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -767,11 +767,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 29
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 284
+      value: 791
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649475255877, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -928,9 +928,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nPC_Waves: {fileID: 11400000, guid: 09825d17df3c3f6499c5022d52a06606, type: 2}
   nPC_Manager: {fileID: 1364742406}
+  yearCount: 1
   waveCount: 0
-  timeBetweenWaves: 1
-  timeBetweenWavesTimer: 0
   spawnRate: 10
   LastWaveSpawned: 0
   currentWave: []
@@ -1075,6 +1074,14 @@ PrefabInstance:
     - target: {fileID: 1328392354772200302, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333221298617245077, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333221298617245077, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
