@@ -155,13 +155,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 6017937369128084383}
   m_Enabled: 1
   m_AgentTypeID: 0
-<<<<<<< HEAD
-  m_Radius: 0.49999997
-  m_Speed: 45
-=======
   m_Radius: 1.5
   m_Speed: 3.5
->>>>>>> origin/Matt/Dialogue_Box
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
