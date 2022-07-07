@@ -6,6 +6,7 @@ public class NPC_WaveManager : MonoBehaviour
 {
     public NPC_Waves nPC_Waves;
     public NPC_manager nPC_Manager;
+    public NpcDialogueTracker npcDialogueTracker;
 
     private bool waveStarted = false;
     public int yearCount = 1;
@@ -29,6 +30,7 @@ public class NPC_WaveManager : MonoBehaviour
     void Start()
 
     {
+        npcDialogueTracker = FindObjectOfType<NpcDialogueTracker>();
         LastWaveSpawned = true;
         NPC_Waves = (NPC_Waves[])Resources.LoadAll<NPC_Waves>("");
         nPC_Manager = FindObjectOfType<NPC_manager>();
@@ -90,6 +92,7 @@ public class NPC_WaveManager : MonoBehaviour
     {
         if (waveStarted && spawnedNPCs == nPCsToSpawn && currentWave.Count == 0)
         {
+            npcDialogueTracker.npcCount = 0;
             waveStarted = false;
             Debug.Log("Wave Finished Spawning NPCs");
             LastWaveSpawned = true;

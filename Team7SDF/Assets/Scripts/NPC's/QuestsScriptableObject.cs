@@ -33,9 +33,9 @@ public class QuestsScriptableObject : ScriptableObject
     public int researchConsequence;
     public int currencyConsequence;
 
+    public bool IsPlayerAnswered;
 
-
-
+    public List<string> PlayerResponse;
 
 }
 

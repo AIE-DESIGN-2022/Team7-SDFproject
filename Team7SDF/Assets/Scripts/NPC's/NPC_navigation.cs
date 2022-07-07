@@ -75,6 +75,11 @@ public class NPC_navigation : MonoBehaviour
             agent.isStopped = false;
             agent.destination = target.transform.position;
         }
+        else
+        {
+            agent.isStopped = true;
+            agent.destination = transform.position;
+        }
     }
 
     private void NPCnavLogic()
@@ -158,8 +163,10 @@ public class NPC_navigation : MonoBehaviour
         Vector3 direction = new Vector3(-1, 0, 0);
         Debug.DrawRay(this.transform.position, direction * stoppingRange, Color.red);
         RaycastHit[] hits = Physics.RaycastAll(this.transform.position, direction, stoppingRange);
+        
         if (hits.Length > 0)
         {
+            print(name + " hits");
             foreach (RaycastHit hit in hits)
             {
                 NPC_navigation npc = hit.transform.gameObject.GetComponent<NPC_navigation>();
@@ -171,7 +178,7 @@ public class NPC_navigation : MonoBehaviour
         }
         else
         {
-            //print(name + "not getting any hits");
+            
         }
         return true;
     }

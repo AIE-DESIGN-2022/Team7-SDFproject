@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class NpcDialogueTracker : MonoBehaviour
 {
-
-
     public int npcCount;
 
     public GameObject dialogueBox;
@@ -22,15 +20,17 @@ public class NpcDialogueTracker : MonoBehaviour
     NPC_object npcObject;
     NPC_navigation npcNavigation;
     NPC_WaveManager npcWaveManager;
+    public PlayerInteractionManager playerInteractionManager;
 
     void Start()
     {
         dialogueBox.SetActive(false);
-
-        npcWaveManager = FindObjectOfType<NPC_WaveManager>();   
+        playerInteractionManager = FindObjectOfType<PlayerInteractionManager>();
+        npcWaveManager = FindObjectOfType<NPC_WaveManager>();
         npcManager = FindObjectOfType<NPC_manager>();
         npcObject = FindObjectOfType<NPC_object>();
         npcNavigation = FindObjectOfType<NPC_navigation>();
+
     }
 
     // Update is called once per frame
@@ -38,9 +38,9 @@ public class NpcDialogueTracker : MonoBehaviour
     {
         if (npcManager.clone != null)
         {
-            
-            Debug.Log("ahhhhhhhh");
+
             GetCurrentNpcData();
+
         }
     }
 
@@ -56,18 +56,17 @@ public class NpcDialogueTracker : MonoBehaviour
             }
             else
             {
-            npcCount++;
-            npcName.text = trackedNPC.GetComponent<NPC_object>().nameText;
-            dialogueText.text = trackedNPC.GetComponent<NPC_object>().currentQuest.questDescription;
+                npcName.text = trackedNPC.GetComponentInChildren<NPC_object>().nameText;
+                dialogueText.text = trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.questDescription;
 
-            dialogueBox.SetActive(true);
+                dialogueBox.SetActive(true);
+                playerInteractionManager.responceBox.SetActive(true);
 
-            Debug.Log(trackedNPC);
-            Debug.Log(dialogueText.text);
-            Debug.Log(npcName.text);
-
+                Debug.Log(trackedNPC);
+                Debug.Log(dialogueText.text);
+                Debug.Log(npcName.text);
             }
-         
+
         }
         else
         {
