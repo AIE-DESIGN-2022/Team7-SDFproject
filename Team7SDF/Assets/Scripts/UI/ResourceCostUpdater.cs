@@ -40,5 +40,11 @@ public class ResourceCostUpdater : MonoBehaviour
         {
             layoutElement.minWidth = 576;
         }
+
+
+    }
+    public void SetResourceCost()
+    {
+
     }
 }
