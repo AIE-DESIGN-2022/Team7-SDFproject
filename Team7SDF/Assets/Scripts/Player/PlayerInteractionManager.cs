@@ -49,6 +49,7 @@ public class PlayerInteractionManager : MonoBehaviour
         npcToTrack.GetComponentInChildren<NPC_navigation>().isNPC_InteractionCompleted = true;
         CurrentNPC_quest.PlayerResponse.Add("Y");
         responceBox.SetActive(false);
+        npcDialogueTracker.dialogueBox.SetActive(false);
     }
     public void NoPressed()
     {
@@ -58,5 +59,6 @@ public class PlayerInteractionManager : MonoBehaviour
         npcToTrack.GetComponentInChildren<NPC_navigation>().isNPC_InteractionCompleted = true;
         CurrentNPC_quest.PlayerResponse.Add("N");
         responceBox.SetActive(false);
+        npcDialogueTracker.dialogueBox.SetActive(false);
     }
 }
