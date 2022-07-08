@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
+  m_Name: Villager Quest 5
+  m_EditorClassIdentifier: 
+  questTitle: Villager 5 - New Resources
+  questDescription: "Sorry brilliant ruler\u2026but I've heard rumours about these
+    really beautiful resources that are only available in the 75th  system and I
+    really would love to use it for my food business! Is there a way that you could
+    find access to this  beautiful fruit? Would really help us advance our taste
+    buds and understanding of culture!"
+  chipRequirment: 0
+  alloyRequirment: 0
+  fuelRequirment: 5
+  populationConsequence: 0
+  happinessConsequence: 0
+  researchConsequence: 0
+  currencyConsequence: 0

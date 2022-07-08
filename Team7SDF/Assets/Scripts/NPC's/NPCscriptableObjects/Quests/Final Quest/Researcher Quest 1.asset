@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
+  m_Name: Researcher Quest 1
+  m_EditorClassIdentifier: 
+  questTitle: Researcher 1 - Military
+  questDescription: "\"Hello\u2026I am one of the key researchers in the western
+    part of our illustrious planet!  And although our research is growing and expanding,
+    we do request more funding to gather equipment  that can further understand new
+    resources located on our excavation sites and build them into equipment  for
+    our military forces.  This could potentially benefit both our defences and our
+    growing expansion of resources for our economic influence!"
+  chipRequirment: 0
+  alloyRequirment: 0
+  fuelRequirment: 0
+  populationConsequence: 0
+  happinessConsequence: 0
+  researchConsequence: 0
+  currencyConsequence: 0
