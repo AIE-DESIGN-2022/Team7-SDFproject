@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
+  m_Name: Villager Quest 4
+  m_EditorClassIdentifier: 
+  questTitle: Villager 4 - Form Military Force
+  questDescription: Sorry to barge in like this but we've heard news about several
+    other systems rallying together and targeting  systems and planet close to us!
+    We need to up our defences and act if we want to stand a chance against these
+    fools!  I'd like to ask that you bring forth a military force that volunteers
+    can sign up to.  I'd be proud to fight for my planet and keep my friends and
+    family safe. Will you please help protect our beautiful  home?
+  chipRequirment: 0
+  alloyRequirment: 0
+  fuelRequirment: 0
+  populationConsequence: 0
+  happinessConsequence: 0
+  researchConsequence: 0
+  currencyConsequence: 0

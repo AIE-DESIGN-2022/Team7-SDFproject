@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
+  m_Name: Researcher Quest 2
+  m_EditorClassIdentifier: 
+  questTitle: Researcher 2 - New Fuel Site
+  questDescription: "Heeeey\u2026. So I've got some interesting news about a new
+    site that we have located!  We believe that this new location could be an ancient
+    ruin that can potentially provide us with a deeper understanding  of our people\u2019s
+    history and expanding our incoming assets!  However, because this is a big scientific
+    discovery, we do require a decent donation to research further.  Would you be
+    able to assist in funding this potentially revolutionary discovery?"
+  chipRequirment: 0
+  alloyRequirment: 0
+  fuelRequirment: 0
+  populationConsequence: 0
+  happinessConsequence: 0
+  researchConsequence: 0
+  currencyConsequence: 0
