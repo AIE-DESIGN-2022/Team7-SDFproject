@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerInteractionManager : MonoBehaviour
 {
-
-    public GameObject responceBox;
     public NpcDialogueTracker npcDialogueTracker;
     public QuestsScriptableObject CurrentNPC_quest;
     public GameObject npcToTrack;
@@ -14,7 +12,6 @@ public class PlayerInteractionManager : MonoBehaviour
     void Start()
     {
         //CurrentNPC_quest.PlayerResponse.Clear();
-        responceBox.SetActive(false);
         npcDialogueTracker = FindObjectOfType<NpcDialogueTracker>();
         //npcToTrack = npcDialogueTracker.trackedNPC;
         //CurrentNPCquest = npcToTrack.GetComponent<NPC_object>().currentQuest;
@@ -25,18 +22,18 @@ public class PlayerInteractionManager : MonoBehaviour
     {
         if (npcDialogueTracker.trackedNPC != null)
         {
-            npcToTrack = npcDialogueTracker.trackedNPC;
+            npcToTrack = npcDialogueTracker.trackedNPC.gameObject;
             CurrentNPC_quest = npcToTrack.GetComponent<NPC_object>().currentQuest;
 
         }
-        if (responceBox.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Y))
+        if (npcDialogueTracker.yesButton.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Y))
         {
             YesPressed();
 
 
         }
 
-        if (responceBox.activeInHierarchy == true && Input.GetKeyDown(KeyCode.N))
+        if (npcDialogueTracker.noButton.activeInHierarchy == true && Input.GetKeyDown(KeyCode.N))
         {
             NoPressed();
         }
@@ -44,7 +41,7 @@ public class PlayerInteractionManager : MonoBehaviour
 
     public void YesPressed()
     {
-        responceBox.SetActive(false);
+        npcDialogueTracker.yesButton.SetActive(false);
         npcDialogueTracker.dialogueBox.SetActive(false);
         Debug.Log("yes");
         CurrentNPC_quest.IsPlayerAnswered = true;
@@ -56,7 +53,7 @@ public class PlayerInteractionManager : MonoBehaviour
     }
     public void NoPressed()
     {
-        responceBox.SetActive(false);
+        npcDialogueTracker.noButton.SetActive(false);
         npcDialogueTracker.dialogueBox.SetActive(false);
         Debug.Log("no");
         CurrentNPC_quest.IsPlayerAnswered = true;

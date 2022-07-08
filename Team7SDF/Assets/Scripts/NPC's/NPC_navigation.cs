@@ -42,11 +42,13 @@ public class NPC_navigation : MonoBehaviour
 
     private NavMeshAgent agent;
     private NPC_WaveManager waveManager;
+
+    public ResourceCostUpdater npcResourceCostUpdater;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
 
-
+        npcResourceCostUpdater = FindObjectOfType<ResourceCostUpdater>();
 
         spawnPoint = GameObject.FindGameObjectWithTag("Spawn");
         waitPoint = GameObject.FindGameObjectWithTag("Wait");
@@ -133,7 +135,7 @@ public class NPC_navigation : MonoBehaviour
 
             if (!isNPC_active) return;
             SetNPCstate(eNPCstate.Interaction);
-            FindObjectOfType<NpcDialogueTracker>().trackedNPC = CurrentQuestGivingNPC;
+            //FindObjectOfType<NpcDialogueTracker>().trackedNPC = CurrentQuestGivingNPC;
 
 
         }
@@ -220,7 +222,10 @@ public class NPC_navigation : MonoBehaviour
                 transform.parent.tag = "InteractingNPC";
                 gameObject.tag = "InteractingNPC";
                 FindObjectOfType<NpcDialogueTracker>().dialogueBox.SetActive(true);
-                FindObjectOfType<PlayerInteractionManager>().responceBox.SetActive(true);
+                FindObjectOfType<NpcDialogueTracker>().yesButton.SetActive(true);
+                FindObjectOfType<NpcDialogueTracker>().noButton.SetActive(true);
+                FindObjectOfType<NpcDialogueTracker>().GetCurrentNpcData(GetComponentInParent<NPC_object>());
+                //npcResourceCostUpdater.QuestResourceRequirements();
                 /*                if (isNPC_InteractionCompleted)
                                 {
                                     SetNPCstate(eNPCstate.MoveTowardsExitPoint);
@@ -234,7 +239,9 @@ public class NPC_navigation : MonoBehaviour
                 transform.parent.tag = "Untagged";
                 gameObject.tag = "Untagged";
                 FindObjectOfType<NpcDialogueTracker>().dialogueBox.SetActive(false);
-                FindObjectOfType<PlayerInteractionManager>().responceBox.SetActive(false);
+                FindObjectOfType<NpcDialogueTracker>().yesButton.SetActive(false);
+                FindObjectOfType<NpcDialogueTracker>().noButton.SetActive(false);
+                FindObjectOfType<NpcDialogueTracker>().ClearCurrentNpcData();
                 target = despawnPoint;
                 isNPC_InteractionCompleted = true;
                 if (!isNPC_InteractionPointOccupied && isNPC_InteractionCompleted && this.transform.position != target.transform.position)

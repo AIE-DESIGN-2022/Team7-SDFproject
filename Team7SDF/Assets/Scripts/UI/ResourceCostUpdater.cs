@@ -20,7 +20,6 @@ public class ResourceCostUpdater : MonoBehaviour
     public int alloyCost;
     public int fuelCost;
 
-    public int[] resourceCost;
     public TextMeshProUGUI[] resourceTextArray;
 
 
@@ -35,14 +34,14 @@ public class ResourceCostUpdater : MonoBehaviour
         npcDialogueTracker = FindObjectOfType<NpcDialogueTracker>();
         resourceCount = 0;
         resourceTextCount = 0;
-
+        
 
     }
 
     private void Update()
     {
 
-        if (resourceCount == 0)
+/*        if (resourceCount == 0)
         {
             layoutElement.minWidth = 0.0001f;
         }
@@ -57,51 +56,50 @@ public class ResourceCostUpdater : MonoBehaviour
         else if (resourceCount == 3)
         {
             layoutElement.minWidth = 576;
-        }
+        }*/
     }
     public void QuestResourceRequirements()
     {
         if (npcDialogueTracker.trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.chipRequirment > 0)
         {
-            chipCost = npcDialogueTracker.trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.chipRequirment ;
+            chipCost = npcDialogueTracker.trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.chipRequirment;
             UpdateResourceVisual();
+            resourceCount++;
         }
         if (npcDialogueTracker.trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.alloyRequirment > 0)
         {
             alloyCost = npcDialogueTracker.trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.alloyRequirment;
             UpdateResourceVisual();
+            resourceCount++;
         }
         if (npcDialogueTracker.trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.fuelRequirment > 0)
         {
             fuelCost =  npcDialogueTracker.trackedNPC.GetComponentInChildren<NPC_object>().currentQuest.fuelRequirment;
             UpdateResourceVisual();
-
+            resourceCount++;
         }
 
-
         return;
-
     }
 
     public void UpdateResourceVisual()
     {
         if (resourceCount == 1)
         {
-            resourceTextCount++;
             costObjectOne.SetActive(true);
-            resourceTextArray[resourceTextCount].text = resourceCost[resourceCount].ToString();
+            //resourceTextArray[resourceTextCount].text = resourceCost[resourceCount].ToString();
+            resourceTextCount++;
         }
         if (resourceCount == 2)
         {
-            resourceTextCount++;
             costObjectTwo.SetActive(true);
-            resourceTextArray[resourceTextCount].text = resourceCost[resourceCount].ToString();
+            //resourceTextArray[resourceTextCount].text = resourceCost[resourceCount].ToString();
+            resourceTextCount++;
         }
         if (resourceCount == 3)
         {
-            resourceTextCount++;
             costObjectThree.SetActive(true);
-            resourceTextArray[resourceTextCount].text = resourceCost[resourceCount].ToString();
+            //resourceTextArray[resourceTextCount].text = resourceCost[resourceCount].ToString();
         }
     }
 }

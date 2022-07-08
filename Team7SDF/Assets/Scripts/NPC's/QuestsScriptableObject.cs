@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Quest", menuName = "ScriptableObjects/Quest", order = 2)]
 public class QuestsScriptableObject : ScriptableObject
@@ -38,6 +39,7 @@ public class QuestsScriptableObject : ScriptableObject
     public bool IsPlayerAnswered;
 
     public List<string> PlayerResponse;
+
 
 }
 
