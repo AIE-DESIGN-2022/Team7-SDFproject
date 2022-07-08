@@ -6,8 +6,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "Quest", menuName = "ScriptableObjects/Quest", order = 2)]
 public class QuestsScriptableObject : ScriptableObject
 {
-    public int rewardAmount;
-    public int cost;
+ 
 
     /*public enum QuestLine
     {
@@ -36,9 +35,7 @@ public class QuestsScriptableObject : ScriptableObject
     public int researchConsequence;
     public int currencyConsequence;
 
-    public bool IsPlayerAnswered;
 
-    public List<string> PlayerResponse;
 
 
 }

@@ -58,12 +58,11 @@ public class PlayerInteractionManager : MonoBehaviour
             resourceManager.fuelCount -= CurrentNPC_quest.fuelRequirment;
             resourceManager.fuelCountTextUI();
         }
+
         npcDialogueTracker.yesButton.SetActive(false);
         npcDialogueTracker.dialogueBox.SetActive(false);
         Debug.Log("yes");
-        CurrentNPC_quest.IsPlayerAnswered = true;
         npcToTrack.GetComponentInChildren<NPC_navigation>().isNPC_InteractionCompleted = true;
-        CurrentNPC_quest.PlayerResponse.Add("Y");
 
 
 
@@ -75,9 +74,7 @@ public class PlayerInteractionManager : MonoBehaviour
         npcDialogueTracker.noButton.SetActive(false);
         npcDialogueTracker.dialogueBox.SetActive(false);
         Debug.Log("no");
-        CurrentNPC_quest.IsPlayerAnswered = true;
         npcToTrack.GetComponentInChildren<NPC_navigation>().isNPC_InteractionCompleted = true;
-        CurrentNPC_quest.PlayerResponse.Add("N");
 
         npcDialogueTracker.npcCount++;
     }

@@ -303,8 +303,8 @@ MonoBehaviour:
   alloyCount: 19
   fuelCount: 199
   techChipCountText: {fileID: 500747236}
-  alloyCountText: {fileID: 1614177350}
-  fuelCountText: {fileID: 1955137876}
+  alloyCountText: {fileID: 1955137876}
+  fuelCountText: {fileID: 1614177350}
 --- !u!114 &119994747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,6 +333,36 @@ MonoBehaviour:
   alloyIcon: {fileID: 21300000, guid: 357d98ead3523de49ad165d7b7ca77c4, type: 3}
   fuelIcon: {fileID: 21300000, guid: 3a12ee88f00fafb499ccb67ca1e303ea, type: 3}
   costItems: []
+--- !u!114 &119994748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119994741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b8c468ca66b8b64eb707df5fd42b607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceManager: {fileID: 0}
+  buyChipCost: 0
+  sellChipCost: 0
+  buyChipCostText: {fileID: 0}
+  sellChipCostText: {fileID: 0}
+  buyAlloyCost: 0
+  sellAlloyCost: 0
+  buyAlloyCostText: {fileID: 0}
+  sellAlloyCostText: {fileID: 0}
+  buyFuelCost: 0
+  sellFuelCost: 0
+  buyFuelCostText: {fileID: 0}
+  sellFuelCostText: {fileID: 0}
+  currentBuyQuantity: 0
+  currentSellQuantity: 0
+  quantity_x1: 1
+  quantity_x10: 10
+  quantity_x50: 50
 --- !u!1 &149932153
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &154700407
 Transform:
   m_ObjectHideFlags: 0
@@ -1005,11 +1035,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.x
-      value: 0
+      value: -0.52760416
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.46492985
+      value: 0.9799599
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1021,11 +1051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -1013
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 464
+      value: 978
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649475255877, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1550,6 +1580,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9210973536355316093, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
+      propertyPath: m_Name
+      value: Fuel Text
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 995907554563714462, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
     - {fileID: 3839036266509493952, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
@@ -1703,8 +1737,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 61.612854, y: -42.705402, z: 142.86172}
+  m_LocalRotation: {x: 0.013012672, y: 0.11081602, z: -0.0015538738, w: 0.99375457}
+  m_LocalPosition: {x: -94.08714, y: 6.494599, z: -26.838272}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2091,11 +2125,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4632972926600917691, guid: bebe0e9c3790c1747b46c9350d2eb31d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3916
+      value: -1865
       objectReference: {fileID: 0}
     - target: {fileID: 4632972926600917691, guid: bebe0e9c3790c1747b46c9350d2eb31d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 922.89905
+      value: 1527
       objectReference: {fileID: 0}
     - target: {fileID: 4632972926600917691, guid: bebe0e9c3790c1747b46c9350d2eb31d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2252,7 +2286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8014022629367507614, guid: 51cc7fc154686c548b402b32894c1b6c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8014022630466255195, guid: 51cc7fc154686c548b402b32894c1b6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2276,7 +2310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8014022630599374192, guid: 51cc7fc154686c548b402b32894c1b6c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8014022630599374206, guid: 51cc7fc154686c548b402b32894c1b6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2774,6 +2808,7 @@ MonoBehaviour:
   npcDialogueTracker: {fileID: 0}
   CurrentNPC_quest: {fileID: 0}
   npcToTrack: {fileID: 0}
+  resourceManager: {fileID: 119994746}
 --- !u!1 &1878225729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 852854405826652795, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
