@@ -30,36 +30,6 @@ Transform:
   m_Father: {fileID: 2836400453931071773}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1146892482710259626
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8296809259567774631}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8296809259567774631
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146892482710259626}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1003414520140906711}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6017937369128084383
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +64,7 @@ Transform:
   m_LocalScale: {x: 23, y: 23, z: 23}
   m_Children:
   - {fileID: 4112860401130902720}
-  - {fileID: 1003414520140906711}
+  - {fileID: 8069073677615065282}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -227,34 +197,65 @@ MonoBehaviour:
   stoppingRange: 50
   stepBackDistance: 10
   npcResourceCostUpdater: {fileID: 0}
---- !u!1 &7331622546214833827
-GameObject:
+--- !u!1001 &5235417993980285407
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1003414520140906711}
-  m_Layer: 0
-  m_Name: Farmer 3 Mesh (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1003414520140906711
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2836400453931071773}
+    m_Modifications:
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6017937369128084383, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_Name
+      value: Farmer 3 Mesh
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+--- !u!4 &8069073677615065282 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2836400453931071773, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+  m_PrefabInstance: {fileID: 5235417993980285407}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7331622546214833827}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 8296809259567774631}
-  m_Father: {fileID: 2836400453931071773}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
