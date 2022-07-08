@@ -37,7 +37,8 @@ public class ShopManager : MonoBehaviour
     public int quantity_x10 = 10;
     public int quantity_x50 = 50;
 
-    
+
+
 
 
 
@@ -52,25 +53,25 @@ public class ShopManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void BuyChip(Button buyButton)
     {
         Debug.Log("BUY CHIP");
-   
+
     }
 
     public void SellChip(Button sellButton)
     {
         Debug.Log("SELL CHIP");
-      
+
     }
 
     public void BuyAlloy(Button buyButton)
     {
         Debug.Log("BUY ALLOY");
-    
+
     }
 
     public void SellAlloy(Button sellButton)
@@ -88,6 +89,45 @@ public class ShopManager : MonoBehaviour
     public void SellFuel(Button sellButton)
     {
         Debug.Log("SELL FUEL");
+    }
+
+
+    public void BuyQuantity_x1(Button buyQuantityButton_x1)
+    {
+        currentBuyQuantity += quantity_x1;
+        Debug.Log(currentBuyQuantity);
+    }
+
+    public void BuyQuantity_x10(Button buyQuantityButton_x10)
+    {
+        currentBuyQuantity += quantity_x10;
+        Debug.Log(currentBuyQuantity);
+    }
+    public void BuyQuantity_x50(Button buyQuantityButton_x50)
+    {
+        currentBuyQuantity += quantity_x50;
+        Debug.Log(currentBuyQuantity);
+    }
+
+
+    public void SetBuyQuantity()
+    {
+       
+    }
+    public void SetSellQuantity()
+    {
+
+    }
+
+
+    public void ResetBuyQuantity()
+    {
+        currentBuyQuantity = 0;
+    }
+
+    public void ResetSellQuantity()
+    {
+        currentSellQuantity = 0;
     }
 
 }
