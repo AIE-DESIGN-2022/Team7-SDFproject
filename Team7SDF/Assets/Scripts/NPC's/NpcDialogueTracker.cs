@@ -23,6 +23,8 @@ public class NpcDialogueTracker : MonoBehaviour
     NPC_object npcObject;
     NPC_navigation npcNavigation;
     NPC_WaveManager npcWaveManager;
+
+    ResourceManager resourceManager;
     public ResourceCostUpdater npcResourceCostUpdater;
     public PlayerInteractionManager playerInteractionManager;
     [Header("Icons")]
@@ -42,6 +44,7 @@ public class NpcDialogueTracker : MonoBehaviour
         yesButton.SetActive(false);
         noButton.SetActive(false);
 
+        resourceManager = FindObjectOfType<ResourceManager>();
         playerInteractionManager = FindObjectOfType<PlayerInteractionManager>();
         npcWaveManager = FindObjectOfType<NPC_WaveManager>();
         npcManager = FindObjectOfType<NPC_manager>();
@@ -64,7 +67,8 @@ public class NpcDialogueTracker : MonoBehaviour
     public void GetCurrentNpcData(NPC_object currentNPC)
     {
         trackedNPC = currentNPC;
-       // NPC_object currentNpcObject = trackedNPC.GetComponentInChildren<NPC_object>();
+        yesButton.GetComponent<Button>().interactable = true;
+        // NPC_object currentNpcObject = trackedNPC.GetComponentInChildren<NPC_object>();
         if (trackedNPC.GetComponentInChildren<NPC_navigation>().isNPC_InteractionPointOccupied == true)
         {
             npcName.text = trackedNPC.nameText;
@@ -77,6 +81,10 @@ public class NpcDialogueTracker : MonoBehaviour
                 ResourceCostFinder finder = resourceClone.GetComponent<ResourceCostFinder>();
                 finder.resourceIcon.sprite = chipIcon;
                 finder.costText.text = trackedNPC.currentQuest.chipRequirment.ToString();
+                if(resourceManager.techChipCount < trackedNPC.currentQuest.chipRequirment)
+                {
+                    yesButton.GetComponent<Button>().interactable = false;
+                }
             }
             if (trackedNPC.currentQuest.alloyRequirment > 0)
             {
@@ -85,6 +93,10 @@ public class NpcDialogueTracker : MonoBehaviour
                 ResourceCostFinder finder = resourceClone.GetComponent<ResourceCostFinder>();
                 finder.resourceIcon.sprite = alloyIcon;
                 finder.costText.text = trackedNPC.currentQuest.alloyRequirment.ToString();
+                if (resourceManager.alloyCount < trackedNPC.currentQuest.alloyRequirment)
+                {
+                    yesButton.GetComponent<Button>().interactable = false;
+                }
             }
             if (trackedNPC.currentQuest.fuelRequirment > 0)
             {
@@ -93,6 +105,10 @@ public class NpcDialogueTracker : MonoBehaviour
                 ResourceCostFinder finder = resourceClone.GetComponent<ResourceCostFinder>();
                 finder.resourceIcon.sprite = fuelIcon;
                 finder.costText.text = trackedNPC.currentQuest.fuelRequirment.ToString();
+                if (resourceManager.fuelCount < trackedNPC.currentQuest.fuelRequirment)
+                {
+                    yesButton.GetComponent<Button>().interactable = false;
+                }
             }
 
         }
@@ -100,6 +116,8 @@ public class NpcDialogueTracker : MonoBehaviour
         {
             return;
         }
+
+
     }
     public void ClearCurrentNpcData()
     {

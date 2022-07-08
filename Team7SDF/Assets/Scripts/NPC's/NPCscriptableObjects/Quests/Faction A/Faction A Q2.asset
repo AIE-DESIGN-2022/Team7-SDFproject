@@ -17,7 +17,7 @@ MonoBehaviour:
   questTitle: Quest A 2
   questDescription: Quest A 2 Description
   chipRequirment: 0
-  alloyRequirment: 10
+  alloyRequirment: 4
   fuelRequirment: 0
   populationConsequence: 0
   happinessConsequence: 0
@@ -51,5 +51,21 @@ MonoBehaviour:
   - Y
   - Y
   - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - Y
+  - Y
+  - Y
+  - N
+  - Y
+  - N
+  - N
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
   - Y
   - Y

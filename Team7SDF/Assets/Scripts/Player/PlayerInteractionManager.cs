@@ -7,6 +7,7 @@ public class PlayerInteractionManager : MonoBehaviour
     public NpcDialogueTracker npcDialogueTracker;
     public QuestsScriptableObject CurrentNPC_quest;
     public GameObject npcToTrack;
+    public ResourceManager resourceManager;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,22 @@ public class PlayerInteractionManager : MonoBehaviour
 
     public void YesPressed()
     {
+        npcDialogueTracker.npcCount++;
+        if(resourceManager.techChipCount >= CurrentNPC_quest.chipRequirment)
+        {
+            resourceManager.techChipCount -= CurrentNPC_quest.chipRequirment;
+            resourceManager.techChipCountTextUI();
+        }
+        if (resourceManager.alloyCount >= CurrentNPC_quest.alloyRequirment)
+        {
+            resourceManager.alloyCount -= CurrentNPC_quest.alloyRequirment;
+            resourceManager.alloyCountTextUI();
+        }
+        if (resourceManager.fuelCount >= CurrentNPC_quest.fuelRequirment)
+        {
+            resourceManager.fuelCount -= CurrentNPC_quest.fuelRequirment;
+            resourceManager.fuelCountTextUI();
+        }
         npcDialogueTracker.yesButton.SetActive(false);
         npcDialogueTracker.dialogueBox.SetActive(false);
         Debug.Log("yes");
@@ -48,11 +65,13 @@ public class PlayerInteractionManager : MonoBehaviour
         npcToTrack.GetComponentInChildren<NPC_navigation>().isNPC_InteractionCompleted = true;
         CurrentNPC_quest.PlayerResponse.Add("Y");
 
-        npcDialogueTracker.npcCount++;
+
 
     }
     public void NoPressed()
     {
+
+
         npcDialogueTracker.noButton.SetActive(false);
         npcDialogueTracker.dialogueBox.SetActive(false);
         Debug.Log("no");
@@ -61,6 +80,5 @@ public class PlayerInteractionManager : MonoBehaviour
         CurrentNPC_quest.PlayerResponse.Add("N");
 
         npcDialogueTracker.npcCount++;
-
     }
 }

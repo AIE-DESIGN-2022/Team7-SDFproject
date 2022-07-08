@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewardAmount: 10
   cost: 5
-  questline: 0
   questTitle: Quest A 1
   questDescription: Quest A 1 Description
-  chipRequirment: 0
-  alloyRequirment: 20
+  chipRequirment: 100
+  alloyRequirment: 10
   fuelRequirment: 5
   populationConsequence: 0
   happinessConsequence: 0
@@ -52,6 +51,18 @@ MonoBehaviour:
   - N
   - Y
   - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - N
+  - N
+  - N
+  - Y
+  - N
+  - N
   - Y
   - Y
   - Y

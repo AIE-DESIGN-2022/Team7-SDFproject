@@ -14,12 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewardAmount: 10
   cost: 5
-  questline: 0
   questTitle: 'Quest B 1 '
   questDescription: Quest B 1 Desciption
-  chipRequirment: 5
-  alloyRequirment: 0
-  fuelRequirment: 0
+  chipRequirment: 10
+  alloyRequirment: 10
+  fuelRequirment: 10
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0
@@ -55,4 +54,24 @@ MonoBehaviour:
   - Y
   - Y
   - N
+  - Y
+  - Y
+  - Y
+  - Y
+  - Y
+  - N
+  - Y
+  - Y
+  - N
+  - Y
+  - Y
+  - N
+  - N
+  - Y
+  - N
+  - N
+  - N
+  - Y
+  - Y
+  - Y
   - Y

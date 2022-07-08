@@ -16,9 +16,9 @@ MonoBehaviour:
   cost: 15
   questTitle: Quest B 2
   questDescription: Quest B 2 Desciption
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  chipRequirment: 5
+  alloyRequirment: 1
+  fuelRequirment: 10
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0
@@ -70,3 +70,14 @@ MonoBehaviour:
   - N
   - Y
   - N
+  - N
+  - N
+  - Y
+  - N
+  - N
+  - Y
+  - N
+  - Y
+  - Y
+  - Y
+  - Y

@@ -294,12 +294,12 @@ MonoBehaviour:
   happinessPercentCountText: {fileID: 1812834697}
   currencyCountText: {fileID: 1014624079}
   researchLogCountText: {fileID: 186559327}
-  techChipCount: 10
-  alloyCount: 19
-  fuelCount: 199
+  techChipCount: 1000
+  alloyCount: 1000
+  fuelCount: 1000
   techChipCountText: {fileID: 500747236}
-  alloyCountText: {fileID: 1614177350}
-  fuelCountText: {fileID: 1955137876}
+  alloyCountText: {fileID: 1955137876}
+  fuelCountText: {fileID: 1614177350}
 --- !u!114 &119994747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,11 +779,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.x
-      value: -0.5307292
+      value: -0.528125
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.98797596
+      value: 0.9799599
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -795,11 +795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1019
+      value: -1014
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 986
+      value: 978
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649475255877, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1311,6 +1311,10 @@ PrefabInstance:
     - target: {fileID: 9186005215785866928, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210973536355316093, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
+      propertyPath: m_Name
+      value: Fuel Text
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 995907554563714462, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
@@ -2217,6 +2221,7 @@ MonoBehaviour:
   npcDialogueTracker: {fileID: 0}
   CurrentNPC_quest: {fileID: 0}
   npcToTrack: {fileID: 0}
+  resourceManager: {fileID: 119994746}
 --- !u!1 &1878225729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 852854405826652795, guid: 031433b87b8675d4dbb1b3f2af8da271, type: 3}
@@ -2572,7 +2577,7 @@ PrefabInstance:
     - target: {fileID: 7909646102560878034, guid: ae297d72bd154b94daa0578282c1bfa4, type: 3}
       propertyPath: resourceManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 119994746}
     - target: {fileID: 7909646102560878034, guid: ae297d72bd154b94daa0578282c1bfa4, type: 3}
       propertyPath: npcs.Array.data[0]
       value: 
