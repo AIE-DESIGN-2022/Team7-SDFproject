@@ -50,7 +50,7 @@ public class NpcDialogueTracker : MonoBehaviour
         npcManager = FindObjectOfType<NPC_manager>();
         npcObject = FindObjectOfType<NPC_object>();
         npcNavigation = FindObjectOfType<NPC_navigation>();
-        npcResourceCostUpdater = FindObjectOfType<ResourceCostUpdater>();
+        npcResourceCostUpdater = GetComponentInChildren<ResourceCostUpdater>();
 
 
     }

@@ -149,7 +149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5595201988584990771
 RectTransform:
   m_ObjectHideFlags: 0
@@ -296,10 +296,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   layoutElement: {fileID: 1328808402312840948}
-  resourceCount: 3
+  resourceCount: 0
+  resourceTextCount: 0
   costObjectOne: {fileID: 2429469447271761082}
   costObjectTwo: {fileID: 7103745346713654617}
   costObjectThree: {fileID: 710770493961163848}
+  chipCost: 0
+  alloyCost: 0
+  fuelCost: 0
+  resourceTextArray: []
+  npcDialogueTracker: {fileID: 0}
 --- !u!1 &2394444947397063826
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &114738493534681159
 RectTransform:
   m_ObjectHideFlags: 0
@@ -978,7 +984,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5156008784899118329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1011,7 +1017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8325253681090985604
 RectTransform:
   m_ObjectHideFlags: 0

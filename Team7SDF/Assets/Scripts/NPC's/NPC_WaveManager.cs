@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NPC_WaveManager : MonoBehaviour
 {
+    public SoundtrackController soundtrackController;
     public NPC_Waves nPC_Waves;
     public NPC_manager nPC_Manager;
     public NpcDialogueTracker npcDialogueTracker;
@@ -30,6 +31,7 @@ public class NPC_WaveManager : MonoBehaviour
     void Start()
 
     {
+        soundtrackController = FindObjectOfType<SoundtrackController>();
         npcDialogueTracker = FindObjectOfType<NpcDialogueTracker>();
         LastWaveSpawned = true;
         NPC_Waves = (NPC_Waves[])Resources.LoadAll<NPC_Waves>("");
@@ -108,6 +110,7 @@ public class NPC_WaveManager : MonoBehaviour
         {
             yearCount++;
             waveCount = 0;
+            soundtrackController.ChangeSoundtrack();
 
             //pause for end of year statistics
         }
