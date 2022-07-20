@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NPC_WaveManager : MonoBehaviour
 {
@@ -9,7 +10,11 @@ public class NPC_WaveManager : MonoBehaviour
     public NPC_manager nPC_Manager;
     public NpcDialogueTracker npcDialogueTracker;
 
+    public TextMeshProUGUI YearCountText;
+    
+
     private bool waveStarted = false;
+    public int YearLoreCount = 2049;
     public int yearCount = 1;
     public int waveCount = 0;
 
@@ -31,6 +36,7 @@ public class NPC_WaveManager : MonoBehaviour
     void Start()
 
     {
+        UpdateYearCountText();
         soundtrackController = FindObjectOfType<SoundtrackController>();
         npcDialogueTracker = FindObjectOfType<NpcDialogueTracker>();
         LastWaveSpawned = true;
@@ -109,8 +115,10 @@ public class NPC_WaveManager : MonoBehaviour
         if (waveCount == 3 && spawnedNPCs == nPCsToSpawn && currentWave.Count == 0)
         {
             yearCount++;
+            YearLoreCount++;
             waveCount = 0;
             soundtrackController.ChangeSoundtrack();
+            UpdateYearCountText();
 
             //pause for end of year statistics
         }
@@ -121,4 +129,11 @@ public class NPC_WaveManager : MonoBehaviour
         //Debug.Log("NPC removed from wave");
     }
     public int WaveCount { get { return waveCount; } }
+
+    public void UpdateYearCountText()
+    {
+        YearCountText.text = YearLoreCount.ToString();
+       
+
+    }
 }
