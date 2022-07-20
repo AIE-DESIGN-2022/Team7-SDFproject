@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+public enum ResourceType { chips, alloy, fuel}
+
 public class ResourceManager : MonoBehaviour
 {
 
+
+    
     //Civilisation Resources
     public int populationCount;
 
@@ -34,7 +38,7 @@ public class ResourceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //ResourceType chips = techChipCount;
     }
 
     // Update is called once per frame
