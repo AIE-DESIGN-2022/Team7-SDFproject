@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Researcher Single Quest 2
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  questTitle: Researcher SQ - research for weaponry
+  questDescription: "As our enemies grow tougher and stronger, we too must grow in
+    developing more durable weaponry to fight these enemies. As researchers, we just
+    require more building sites to harvest this land\u2019s valuable. Will you help
+    us?"
+  chipRequirment: 2
+  alloyRequirment: 15
+  fuelRequirment: 5
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

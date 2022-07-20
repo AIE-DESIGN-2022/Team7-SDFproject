@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Trader Single Quest 2
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
-  chipRequirment: 0
+  questTitle: Trader SQ -2
+  questDescription: Wow, the Chips on your system are rather special compared to
+    the ones found on my system, would you like to trade resources?
+  chipRequirment: 10
   alloyRequirment: 0
   fuelRequirment: 0
   populationConsequence: 0
