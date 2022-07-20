@@ -13,15 +13,13 @@ MonoBehaviour:
   m_Name: Researcher Quest 1
   m_EditorClassIdentifier: 
   questTitle: Researcher 1 - Military
-  questDescription: "\"Hello\u2026I am one of the key researchers in the western
-    part of our illustrious planet!  And although our research is growing and expanding,
-    we do request more funding to gather equipment  that can further understand new
-    resources located on our excavation sites and build them into equipment  for
-    our military forces.  This could potentially benefit both our defences and our
-    growing expansion of resources for our economic influence!"
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  questDescription: I am one of the key researchers in the western part of our illustrious
+    planet!  And although our research is growing and expanding, we do request more
+    funding to gather equipment that can further understand new resources located
+    on our excavation sites. Will you help us strengthen our military?
+  chipRequirment: 30
+  alloyRequirment: 5
+  fuelRequirment: 5
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

@@ -13,17 +13,14 @@ MonoBehaviour:
   m_Name: Alien Quest 1
   m_EditorClassIdentifier: 
   questTitle: Alien 1 - Marriage
-  questDescription: "\"Well, well, well\u2026We notice that your home planet is in
-    dire need of galactic assistance and reach in this  growing uprising that is
-    sweeping the surrounding systems. With other planets threatening war and destruction, 
-    it is crucial that our systems combine forces and resources to further protect
-    ourselves and maybe our people.  The way that we propose is a joint unification
-    through marriage.  You would simply just commit your life to one of my heirs
-    and in return, we share resources in both valuables  and in military support!
-    Will you accept our proposal?"
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  questDescription: We notice that your home planet is in dire need of galactic assistance
+    and reach in this growing uprising that is sweeping the surrounding systems.
+    Other planets are threatening war and destruction! it is crucial that our systems
+    combine forces!  The way that we propose is a joint unification through marriage.
+    Will you accept?
+  chipRequirment: 5
+  alloyRequirment: 5
+  fuelRequirment: 10
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

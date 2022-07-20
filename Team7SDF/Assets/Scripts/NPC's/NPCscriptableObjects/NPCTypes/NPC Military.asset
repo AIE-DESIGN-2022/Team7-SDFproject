@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: NPC Military
   m_EditorClassIdentifier: 
   NPC_name:
-  - Jeff
-  - Tyler
-  - Rhys
+  - Arthur
+  - Blade
+  - Victor
   factionName: 1
   NPC_type: 1
   NPC_typePrefab:

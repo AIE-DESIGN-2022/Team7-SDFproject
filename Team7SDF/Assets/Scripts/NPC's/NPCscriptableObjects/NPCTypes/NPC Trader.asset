@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: NPC Trader
   m_EditorClassIdentifier: 
   NPC_name:
-  - Jeff
-  - Tyler
-  - Rhys
+  - Murphy
+  - Dutch
+  - Lyta
   factionName: 1
   NPC_type: 2
   NPC_typePrefab:
@@ -23,6 +23,4 @@ MonoBehaviour:
   - {fileID: 6017937369128084383, guid: 7823044ede219d3439b3beab11b762a6, type: 3}
   - {fileID: 6017937369128084383, guid: b8765d63acc7a9f4985653f731908dd6, type: 3}
   quests:
-  - {fileID: 11400000, guid: e21ab9ed41eb3de44b0430e81a252854, type: 2}
-  - {fileID: 11400000, guid: e5fe2c1ae6cd0524ba95a4f55aa63ee9, type: 2}
-  - {fileID: 11400000, guid: 79b8ea08d2d483643bb38174e4365aa3, type: 2}
+  - {fileID: 11400000, guid: 65ae817a2cd93b94b8f2ab6b4e5cdca5, type: 2}

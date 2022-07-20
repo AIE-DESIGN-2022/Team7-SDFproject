@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: NPC Scientist
   m_EditorClassIdentifier: 
   NPC_name:
-  - Jeff
-  - Tyler
-  - Rhys
+  - Emmet
+  - Corvin
   factionName: 0
   NPC_type: 3
   NPC_typePrefab:
@@ -23,6 +22,5 @@ MonoBehaviour:
   - {fileID: 6017937369128084383, guid: 529a9fc51e1cdf24db13667620c38e77, type: 3}
   - {fileID: 6017937369128084383, guid: 3e01528ad5f307441a7127f9c9204171, type: 3}
   quests:
-  - {fileID: 11400000, guid: 3739f991cf7a1f64a9ec3fa6cb41bb68, type: 2}
-  - {fileID: 11400000, guid: f1e8f11508307b843a0d237be332df3b, type: 2}
-  - {fileID: 11400000, guid: 5d96f7fba1e69ec4c9c33b0306c547ec, type: 2}
+  - {fileID: 11400000, guid: a54f595e51c9eb6469c44eba30eb31eb, type: 2}
+  - {fileID: 11400000, guid: c05ff8aa673cfb04c893e54175bf3927, type: 2}
