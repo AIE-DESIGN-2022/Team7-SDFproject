@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
+  m_Name: Villager Single Quest 1
+  m_EditorClassIdentifier: 
+  questTitle: Son needs medical attention
+  questDescription: Help! My son got in a fight with a insectaplant and now his arm
+    is almost torn off! I desperately need 100 chips to pay for his medical bills!
+    Can you help me?
+  chipRequirment: 50
+  alloyRequirment: 0
+  fuelRequirment: 0
+  populationConsequence: 0
+  happinessConsequence: 0
+  researchConsequence: 0
+  currencyConsequence: 0

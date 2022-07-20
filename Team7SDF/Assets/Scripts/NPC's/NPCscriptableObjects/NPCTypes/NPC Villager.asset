@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: NPC Villager
   m_EditorClassIdentifier: 
   NPC_name:
-  - Jeff
-  - Tyler
-  - Rhys
+  - Albus
+  - Carter
+  - Thane
   factionName: 0
   NPC_type: 0
   NPC_typePrefab:
@@ -23,6 +23,10 @@ MonoBehaviour:
   - {fileID: 6017937369128084383, guid: d17c4b8b678c6d54587afc2109a4e7d9, type: 3}
   - {fileID: 6017937369128084383, guid: e800823ba4c2cd341a6c597488a8a178, type: 3}
   quests:
-  - {fileID: 11400000, guid: f1e8f11508307b843a0d237be332df3b, type: 2}
-  - {fileID: 11400000, guid: 5d96f7fba1e69ec4c9c33b0306c547ec, type: 2}
-  - {fileID: 11400000, guid: 3739f991cf7a1f64a9ec3fa6cb41bb68, type: 2}
+  - {fileID: 11400000, guid: 1f513fb291996c848b160be67e94632e, type: 2}
+  - {fileID: 11400000, guid: 474a32ebfe89e064796879885e3040e1, type: 2}
+  - {fileID: 11400000, guid: 000eaa47f4bc2f349966ac752517a378, type: 2}
+  - {fileID: 11400000, guid: 956f306b56562b44189b2ac63f04c8f8, type: 2}
+  - {fileID: 11400000, guid: 328d2c152c46acf4f94bb327d9b8595f, type: 2}
+  - {fileID: 11400000, guid: e2cb40c507cbc724686c6ffbed24fa4b, type: 2}
+  - {fileID: 11400000, guid: 54ab80e0a55d6d444b15e551017a04ab, type: 2}
