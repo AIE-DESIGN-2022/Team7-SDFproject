@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: Villager Quest 1
   m_EditorClassIdentifier: 
   questTitle: Villager 1 - Lower Taxes
-  questDescription: "I-I-I'm so sorry to ask this of you, most generous one\u2026but
-    down on the main planet, we are struggling to keep our  finances and credit ratings
-    up. We understand the economic structure that you have so brilliantly put into
-    place,  but we are struggling to even pay for basic food and resources! Lowing
-    the taxes on such items would really help  so many families in need."
-  chipRequirment: 0
+  questDescription: Down on the main planet, we are struggling to keep our finances
+    and credit ratings up. We understand the economic structure, but we are struggling
+    to even pay for basic food and resources! Lowing the taxes on such items would
+    really help so many families!
+  chipRequirment: 10
   alloyRequirment: 0
   fuelRequirment: 0
   populationConsequence: 0

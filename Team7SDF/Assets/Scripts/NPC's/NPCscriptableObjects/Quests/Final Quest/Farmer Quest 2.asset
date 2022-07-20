@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questTitle: Farmer 2 - Gain Resources
   questDescription: "Sorry to bother you\u2026but at this current time in our location,
-    we require only a few extra credits to acquire and locate  resources for our
-    farms. It would be an honour if you could assist us."
-  chipRequirment: 0
+    we require only a few extra Chips to acquire and locate resources for our farms.
+    It would be an honour if you could assist us."
+  chipRequirment: 25
   alloyRequirment: 0
   fuelRequirment: 0
   populationConsequence: 0

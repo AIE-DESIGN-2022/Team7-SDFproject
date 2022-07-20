@@ -17,7 +17,7 @@ MonoBehaviour:
     rule over the years but at this time,  our enemies are growing in advance technologies,
     and we soon won't be able to keep up with them.  Can you please allow for some
     research and advancements in our weaponry?
-  chipRequirment: 5
+  chipRequirment: 20
   alloyRequirment: 0
   fuelRequirment: 0
   populationConsequence: 0

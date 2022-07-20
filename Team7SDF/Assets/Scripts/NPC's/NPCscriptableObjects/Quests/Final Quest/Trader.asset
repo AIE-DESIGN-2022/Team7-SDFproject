@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Trader
   m_EditorClassIdentifier: 
   questTitle: ' Trader Quest - reusable'
-  questDescription: Hello there! My name is Dutch, and I see that you have some beautiful
-    valuables that I've never seen on my home  planet but require for our research!
-    Would you be interested in trading some of your Spice for some of our valuable 
-    resources?
+  questDescription: Hello there! I see that you have some beautiful valuables that
+    I've never seen on my home  planet but require for our research! Would you be
+    interested in trading some of your Spice for some of our valuable  resources?
   chipRequirment: 0
   alloyRequirment: 0
-  fuelRequirment: 5
+  fuelRequirment: 10
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

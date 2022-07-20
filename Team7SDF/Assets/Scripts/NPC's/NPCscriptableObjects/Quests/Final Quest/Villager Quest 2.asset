@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: Villager Quest 2
   m_EditorClassIdentifier: 
   questTitle: Villager 2 - Structual Improvement
-  questDescription: Hello! My name is Serra and I'm from the Northern part of our-sorry,
-    your lovely planet.  We the Northerners only ask that our structures and homes
-    be improved due to the harsh weather conditions.  Even a slight improvement would
-    really help so many families and businesses!
+  questDescription: We Northerners of your planet only ask that our structures and
+    homes be improved due to the harsh weather conditions.  Even a slight improvement
+    would really help so many families and businesses!
   chipRequirment: 0
-  alloyRequirment: 5
+  alloyRequirment: 15
   fuelRequirment: 0
   populationConsequence: 0
   happinessConsequence: 0

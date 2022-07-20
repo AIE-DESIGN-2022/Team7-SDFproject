@@ -14,13 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questTitle: Alien 2 - War
   questDescription: "As our system is ever growing and evolving, we want to expand
-    our reach. However, your system is in our way.  You as a ruler have one of two
-    choices: either surrender your nation to us and you can still live but be vice
-    president,  or you risk everyone\u2019s lives as we unleash our forces upon yours.
-    Are you going to take the easy way or the hard way  out? "
-  chipRequirment: 0
+    our reach. However, your system is in our way.  So, either surrender your nation
+    to us and you can still live, or you risk everyone\u2019s lives as we unleash
+    our forces upon yours. Are you going to take the easy way or the hard way out?"
+  chipRequirment: 5
   alloyRequirment: 0
-  fuelRequirment: 0
+  fuelRequirment: 5
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

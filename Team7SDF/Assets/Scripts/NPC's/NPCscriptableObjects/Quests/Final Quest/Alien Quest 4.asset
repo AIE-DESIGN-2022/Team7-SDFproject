@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Alien Quest 4
   m_EditorClassIdentifier: 
   questTitle: Alien 4 - Alliance
-  questDescription: If it isn't the somewhat most respected ruler in this sector
-    of the galaxy! As I understand it, there is an ever growing  threat that endangers
+  questDescription: As I understand it, there is an ever-growing threat that endangers
     not only your people and planet, but your rule! All that I simply request is
-    that we join our  forces so that in the case of them threatening either one of
+    that we join our forces so that in the case of them threatening either one of
     us or our planets, we protect one another!  What do you say?
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  chipRequirment: 5
+  alloyRequirment: 2
+  fuelRequirment: 5
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

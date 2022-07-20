@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Villager Quest 3
   m_EditorClassIdentifier: 
   questTitle: Villager 3 - More Jobs
-  questDescription: Your majesty! We hope that you are staying well up here. We just
-    wanted to ask that there be more jobs available  throughout the planet. Cost
-    for certain resources have increased obviously but a lot of us can't afford to
-    live  comfortably and are starving ourselves and our families! These jobs would
-    really help us grow economically and  socially as well! Can you help us?
+  questDescription: We just wanted to ask that there be more jobs available throughout
+    the planet. A lot of us can't afford to live comfortably and are starving ourselves
+    and our families! These jobs would really help us grow and be happy! Can you
+    help us?
   chipRequirment: 0
   alloyRequirment: 0
   fuelRequirment: 0
