@@ -180,6 +180,7 @@ MonoBehaviour:
   CurrentQuestGivingNPC: {fileID: 0}
   stoppingRange: 50
   stepBackDistance: 5
+  dialogueController: {fileID: 0}
   npcResourceCostUpdater: {fileID: 0}
 --- !u!54 &1445872605060291750
 Rigidbody:
@@ -935,12 +936,18 @@ Animator:
   m_GameObject: {fileID: 8658425412237611368}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c8c20564eb982f84a96a0d4d8e357cc5, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e1cbbe6fb5c11a42bef307fb3803182, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'Root'\n\tTransform 'IndexFinger_02'\n\tTransform
+    'Elbow_R'\n\tTransform 'Finger_02'\n\tTransform 'Finger_03'\n\tTransform 'Ball_L'\n\tTransform
+    'Thumb_02'\n\tTransform 'Ball_R'\n\tTransform 'Clavicle_L'\n\tTransform 'Finger_01'\n\tand
+    more ...\n\tFrom animation clip 'Idle'\n\tFrom animation clip 'Walking'\n\tFrom
+    animation clip 'Talking'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
