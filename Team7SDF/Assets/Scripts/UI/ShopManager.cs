@@ -5,129 +5,74 @@ using UnityEngine.UI;
 using TMPro;
 public class ShopManager : MonoBehaviour
 {
+    public int buyPrice;
+    public int sellPrice;
+
     public ResourceManager resourceManager;
 
-    [Header("Chip Economy")]
-
-    public int buyChipCost;
-    public int sellChipCost;
-    public TextMeshProUGUI buyChipCostText;
-    public TextMeshProUGUI sellChipCostText;
-
-    [Header("Alloy Economy")]
-
-    public int buyAlloyCost;
-    public int sellAlloyCost;
-    public TextMeshProUGUI buyAlloyCostText;
-    public TextMeshProUGUI sellAlloyCostText;
-
-    [Header("Fuel Economy")]
-
-    public int buyFuelCost;
-    public int sellFuelCost;
-    public TextMeshProUGUI buyFuelCostText;
-    public TextMeshProUGUI sellFuelCostText;
-
-    [Header("Buy/Sell Quantity")]
-
-    public int currentBuyQuantity;
-    public int currentSellQuantity;
-
-    public int quantity_x1 = 1;
-    public int quantity_x10 = 10;
-    public int quantity_x50 = 50;
-
-
-
-
-
-
-
-    // Start is called before the first frame update
-    void Start()
+    public void Awake()
+    {
+        
+    }
+    public void Start()
     {
         resourceManager = FindObjectOfType<ResourceManager>();
-
     }
-
-    // Update is called once per frame
-    void Update()
+    public void BuyButton(ResourceButton buttonClicked)
     {
+        switch (buttonClicked.resourceType)
+        {
+            case ResourceType.chips:
+                resourceManager.techChipCount += buttonClicked.quantity;
+                resourceManager.currencyCount -= buyPrice;
+                buyPrice = buttonClicked.quantity * 10;
+                break;
+
+
+            case ResourceType.alloy:
+                resourceManager.alloyCount += buttonClicked.quantity;
+                resourceManager.currencyCount -= buyPrice;
+                buyPrice = buttonClicked.quantity * 10;
+                break;
+
+
+            case ResourceType.fuel:
+                resourceManager.fuelCount += buttonClicked.quantity;
+                resourceManager.currencyCount -= buyPrice;
+                buyPrice = buttonClicked.quantity * 10;
+                break;
+        }
 
     }
-
-    public void BuyChip(Button buyButton)
+    public void SellButton(ResourceButton buttonClicked)
     {
-        Debug.Log("BUY CHIP");
+        switch (buttonClicked.resourceType)
+        {
+            case ResourceType.chips:
+                resourceManager.techChipCount -= buttonClicked.quantity;
+                resourceManager.currencyCount += sellPrice;
+                sellPrice = buttonClicked.quantity * 5;
+                break;
+
+
+            case ResourceType.alloy:
+                resourceManager.alloyCount -= buttonClicked.quantity;
+                resourceManager.currencyCount += sellPrice;
+                sellPrice = buttonClicked.quantity * 5;
+                break;
+
+
+            case ResourceType.fuel:
+                resourceManager.fuelCount -= buttonClicked.quantity;
+                resourceManager.currencyCount += sellPrice;
+                sellPrice = buttonClicked.quantity * 5;
+                break;
+
+
+
+        }
 
     }
 
-    public void SellChip(Button sellButton)
-    {
-        Debug.Log("SELL CHIP");
-
-    }
-
-    public void BuyAlloy(Button buyButton)
-    {
-        Debug.Log("BUY ALLOY");
-
-    }
-
-    public void SellAlloy(Button sellButton)
-    {
-        Debug.Log("SELL ALLOY");
-
-    }
-
-    public void BuyFuel(Button buyButton)
-    {
-        Debug.Log("BUY FUEL");
-
-    }
-
-    public void SellFuel(Button sellButton)
-    {
-        Debug.Log("SELL FUEL");
-    }
-
-
-    public void BuyQuantity_x1(Button buyQuantityButton_x1)
-    {
-        currentBuyQuantity += quantity_x1;
-        Debug.Log(currentBuyQuantity);
-    }
-
-    public void BuyQuantity_x10(Button buyQuantityButton_x10)
-    {
-        currentBuyQuantity += quantity_x10;
-        Debug.Log(currentBuyQuantity);
-    }
-    public void BuyQuantity_x50(Button buyQuantityButton_x50)
-    {
-        currentBuyQuantity += quantity_x50;
-        Debug.Log(currentBuyQuantity);
-    }
-
-
-    public void SetBuyQuantity()
-    {
-       
-    }
-    public void SetSellQuantity()
-    {
-
-    }
-
-
-    public void ResetBuyQuantity()
-    {
-        currentBuyQuantity = 0;
-    }
-
-    public void ResetSellQuantity()
-    {
-        currentSellQuantity = 0;
-    }
-
+    
 }
