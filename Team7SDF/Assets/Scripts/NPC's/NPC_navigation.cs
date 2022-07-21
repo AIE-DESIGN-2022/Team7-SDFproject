@@ -45,10 +45,13 @@ public class NPC_navigation : MonoBehaviour
 
     public DialogueController dialogueController;
     public ResourceCostUpdater npcResourceCostUpdater;
+
+    public Animator animator;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
 
+        animator = GetComponentInChildren<Animator>();
         npcResourceCostUpdater = FindObjectOfType<ResourceCostUpdater>();
 
         dialogueController = GetComponentInParent<DialogueController>();

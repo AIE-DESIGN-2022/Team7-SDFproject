@@ -182,6 +182,7 @@ MonoBehaviour:
   stepBackDistance: 5
   dialogueController: {fileID: 0}
   npcResourceCostUpdater: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!54 &7993140867725210226
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -257,7 +258,8 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7e1cbbe6fb5c11a42bef307fb3803182, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8554738664112404680, guid: dafca800f65b8c94e9f966d2437e8e61, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dafca800f65b8c94e9f966d2437e8e61, type: 3}
 --- !u!4 &8670226493007791911 stripped
 Transform:
