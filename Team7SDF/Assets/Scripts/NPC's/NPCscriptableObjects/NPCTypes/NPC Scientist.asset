@@ -15,6 +15,7 @@ MonoBehaviour:
   NPC_name:
   - Emmet
   - Corvin
+  - Bryce
   factionName: 0
   NPC_type: 3
   NPC_typePrefab:
@@ -24,3 +25,6 @@ MonoBehaviour:
   quests:
   - {fileID: 11400000, guid: a54f595e51c9eb6469c44eba30eb31eb, type: 2}
   - {fileID: 11400000, guid: c05ff8aa673cfb04c893e54175bf3927, type: 2}
+  - {fileID: 11400000, guid: 33551ad398648c646b61a3d33055f903, type: 2}
+  - {fileID: 11400000, guid: 6dd5114f4fa9b5146b1d31054120d308, type: 2}
+  - {fileID: 11400000, guid: edeb95329287e8b4b970999719bda094, type: 2}

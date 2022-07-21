@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
-  m_Name: Military Single Quest
+  m_Name: Military Single Quest 1
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  questTitle: Military SQ - patrol in west
+  questDescription: Your majesty, we recently had several fights break out in our
+    Western villages and are in need of some extra patrols in order to keep the peace.
+    All we need is some Chips to fund them, Alloy for the weaponry and Fuel to get
+    our troops over there. Can you help?
+  chipRequirment: 5
+  alloyRequirment: 15
+  fuelRequirment: 20
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Military Single Quest 3
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  questTitle: Military SQ - East outlands
+  questDescription: Your excellence, in order to fight against ever growing threats,
+    we need a team of researchers to go to the Eastern outlands to find more Alloy
+    for our weapons. Can you provide support for us?
+  chipRequirment: 5
+  alloyRequirment: 5
+  fuelRequirment: 20
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0
