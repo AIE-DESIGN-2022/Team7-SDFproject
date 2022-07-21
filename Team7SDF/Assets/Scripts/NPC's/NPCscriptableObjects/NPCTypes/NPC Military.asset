@@ -18,9 +18,19 @@ MonoBehaviour:
   - Victor
   factionName: 1
   NPC_type: 1
+  dialogueClips:
+  - {fileID: 8300000, guid: 873c9620ffe303f4f9b4182554058e7a, type: 3}
+  - {fileID: 8300000, guid: 1b387a15e3ab4d540b8031c170f48cf1, type: 3}
   NPC_typePrefab:
   - {fileID: 6017937369128084383, guid: 9750bc0a9a15caf43827c9c3fa860a1e, type: 3}
   - {fileID: 6017937369128084383, guid: 90768cbcbf1754c429e4b7bea509d4cf, type: 3}
   - {fileID: 6017937369128084383, guid: 39e6c2b261015674ab75a9c0f04bbfbd, type: 3}
   quests:
   - {fileID: 11400000, guid: 26024de96921c6742a27a889e6976387, type: 2}
+  - {fileID: 11400000, guid: e3207fde0720c7941bd98bd4a4ea68bf, type: 2}
+  - {fileID: 11400000, guid: 346a094dd4dd4404c8267fcd79a1112d, type: 2}
+  - {fileID: 11400000, guid: 20a4d8fcf3fac3e4ba5eaaff01678e60, type: 2}
+  - {fileID: 11400000, guid: fa46df09d8b817c43a56018b8cca8229, type: 2}
+  - {fileID: 11400000, guid: 8724d5a6f1caf424b86e4d554b6f81fd, type: 2}
+  - {fileID: 11400000, guid: fb7c2e1b7e9ae0a449bf04b13301de08, type: 2}
+  - {fileID: 11400000, guid: cc8a8eece3725fd488e6f52a6cd3a28a, type: 2}

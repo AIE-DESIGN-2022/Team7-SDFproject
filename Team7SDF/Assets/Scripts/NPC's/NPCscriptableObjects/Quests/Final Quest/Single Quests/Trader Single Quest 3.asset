@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Trader Single Quest 3
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
+  questTitle: Trader SQ -3
+  questDescription: "I can see that you have some Alloy on your planet. I\u2019m
+    from another system and I could really use some of that Alloy for myself! Would
+    you be interested in trading for it?"
   chipRequirment: 0
-  alloyRequirment: 0
+  alloyRequirment: 15
   fuelRequirment: 0
   populationConsequence: 0
   happinessConsequence: 0

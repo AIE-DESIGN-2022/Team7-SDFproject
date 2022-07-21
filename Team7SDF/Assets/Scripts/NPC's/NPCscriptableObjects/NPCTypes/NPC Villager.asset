@@ -18,6 +18,12 @@ MonoBehaviour:
   - Thane
   factionName: 0
   NPC_type: 0
+  dialogueClips:
+  - {fileID: 8300000, guid: da9cb0a918c06d9459befbe3ceeca355, type: 3}
+  - {fileID: 8300000, guid: 711d2d74a332b1646a31a22aa29ec19f, type: 3}
+  - {fileID: 8300000, guid: d7894548c9832b94e8a7d67686130e63, type: 3}
+  - {fileID: 8300000, guid: a23102884f61f244296cb2e19fa1bc76, type: 3}
+  - {fileID: 8300000, guid: c13ac6a97deb4da41b499889159a1f17, type: 3}
   NPC_typePrefab:
   - {fileID: 6017937369128084383, guid: 09014824ed010234ea7b5692b55f2f7a, type: 3}
   - {fileID: 6017937369128084383, guid: d17c4b8b678c6d54587afc2109a4e7d9, type: 3}
@@ -30,3 +36,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 328d2c152c46acf4f94bb327d9b8595f, type: 2}
   - {fileID: 11400000, guid: e2cb40c507cbc724686c6ffbed24fa4b, type: 2}
   - {fileID: 11400000, guid: 54ab80e0a55d6d444b15e551017a04ab, type: 2}
+  - {fileID: 11400000, guid: 1f513fb291996c848b160be67e94632e, type: 2}
+  - {fileID: 11400000, guid: 3a28452539860bb4b80f72f4487270e3, type: 2}
+  - {fileID: 11400000, guid: 4a78d4f86c63a8040806c22287b64f98, type: 2}
+  - {fileID: 11400000, guid: ab56d82b4ac1ac048b41ed376b52f6da, type: 2}
+  - {fileID: 11400000, guid: e903b66b947633e489b002825b6976b8, type: 2}
+  - {fileID: 11400000, guid: 3af452888a0691e44a0dba4138ba6bce, type: 2}

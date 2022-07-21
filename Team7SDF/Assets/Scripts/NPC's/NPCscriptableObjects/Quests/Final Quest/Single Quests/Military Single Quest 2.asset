@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Military Single Quest 2
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  questTitle: Military SQ - assist another system
+  questDescription: We have been asked to assist another system in fighting against
+    a large creature that is suffocating their planet! Can you provide us with the
+    resources please to help these people!
+  chipRequirment: 4
+  alloyRequirment: 15
+  fuelRequirment: 15
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

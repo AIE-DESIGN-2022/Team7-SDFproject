@@ -196,6 +196,7 @@ MonoBehaviour:
   CurrentQuestGivingNPC: {fileID: 0}
   stoppingRange: 50
   stepBackDistance: 10
+  dialogueController: {fileID: 0}
   npcResourceCostUpdater: {fileID: 0}
 --- !u!1001 &5235417993980285407
 PrefabInstance:
@@ -248,6 +249,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5215490209586333996, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7e1cbbe6fb5c11a42bef307fb3803182, type: 2}
     - target: {fileID: 6017937369128084383, guid: 0efa91961ce608b4ab9b3ba95c254ebf, type: 3}
       propertyPath: m_Name
       value: Farmer 3 Mesh

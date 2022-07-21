@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Trader Single Quest 1
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
+  questTitle: 'Trader SQ -1 '
+  questDescription: "The valuables on your planet are rather different to what I\u2019ve
+    seen around. I\u2019d love to trade some of your Fuel for some of my valuables
+    from my travels!"
   chipRequirment: 0
   alloyRequirment: 0
-  fuelRequirment: 0
+  fuelRequirment: 20
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

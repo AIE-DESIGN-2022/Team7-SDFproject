@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 
 public enum ResourceType { chips, alloy, fuel}
-
 public class ResourceManager : MonoBehaviour
 {
 
@@ -44,9 +43,17 @@ public class ResourceManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CurrencyChecker();
         updateResourceTextUI();
     }
 
+    public void CurrencyChecker()
+    {
+        if(currencyCount <= 0)
+        {
+            currencyCount = 0;
+        }
+    }
 
 
 

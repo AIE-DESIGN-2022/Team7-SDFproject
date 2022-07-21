@@ -18,9 +18,22 @@ MonoBehaviour:
   - Lyta
   factionName: 1
   NPC_type: 2
+  dialogueClips:
+  - {fileID: 8300000, guid: 2baa119397c381447acd7f26cefd2f2f, type: 3}
+  - {fileID: 8300000, guid: c13ac6a97deb4da41b499889159a1f17, type: 3}
+  - {fileID: 8300000, guid: da9cb0a918c06d9459befbe3ceeca355, type: 3}
+  - {fileID: 8300000, guid: 9c9b04b235edbf14f9cb0126acdb1d74, type: 3}
+  - {fileID: 8300000, guid: 270837ffa4c783b4c8489340d69563e1, type: 3}
   NPC_typePrefab:
   - {fileID: 6017937369128084383, guid: 850defa0c6207374a8c6201a4089bfed, type: 3}
   - {fileID: 6017937369128084383, guid: 7823044ede219d3439b3beab11b762a6, type: 3}
   - {fileID: 6017937369128084383, guid: b8765d63acc7a9f4985653f731908dd6, type: 3}
   quests:
   - {fileID: 11400000, guid: 65ae817a2cd93b94b8f2ab6b4e5cdca5, type: 2}
+  - {fileID: 11400000, guid: a3ea72577c781554f88926e20b9f7af5, type: 2}
+  - {fileID: 11400000, guid: 784510245293c0f46872c1d30ec444cd, type: 2}
+  - {fileID: 11400000, guid: b56bac634972c8149b518663422d4570, type: 2}
+  - {fileID: 11400000, guid: 3a9c81cd16aa6684a9e5fdcae532b4f6, type: 2}
+  - {fileID: 11400000, guid: 0753ec5554af7c740a7d20951d9fc89e, type: 2}
+  - {fileID: 11400000, guid: b26fc1fc49f6a0a429435568a2652bb8, type: 2}
+  - {fileID: 11400000, guid: fa344054b354d0b47911cdfd6b650b33, type: 2}
