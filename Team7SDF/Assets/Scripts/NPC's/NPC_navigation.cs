@@ -43,13 +43,18 @@ public class NPC_navigation : MonoBehaviour
     private NavMeshAgent agent;
     private NPC_WaveManager waveManager;
 
+    public DialogueController dialogueController;
     public ResourceCostUpdater npcResourceCostUpdater;
+
+    public Animator animator;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
 
+        animator = GetComponentInChildren<Animator>();
         npcResourceCostUpdater = FindObjectOfType<ResourceCostUpdater>();
 
+        dialogueController = GetComponentInParent<DialogueController>();
         spawnPoint = GameObject.FindGameObjectWithTag("Spawn");
         waitPoint = GameObject.FindGameObjectWithTag("Wait");
         interactionPoint = GameObject.FindGameObjectWithTag("Interaction");
@@ -199,14 +204,16 @@ public class NPC_navigation : MonoBehaviour
         {
             case eNPCstate.MoveTowardsWaitPoint:
                 target = waitPoint;
-/*                if (isNPC_InteractionPointOccupied && !isNPC_InteractionCompleted && this.transform.position != target.transform.position)
-                {
-                    agent.isStopped = false;
-                    SetNPCstate(eNPCstate.MoveTowardsInteractionPoint);
-                }*/
+                animator.SetTrigger("Idle");
+                /*                if (isNPC_InteractionPointOccupied && !isNPC_InteractionCompleted && this.transform.position != target.transform.position)
+                                {
+                                    agent.isStopped = false;
+                                    SetNPCstate(eNPCstate.MoveTowardsInteractionPoint);
+                                }*/
                 break;
 
             case eNPCstate.MoveTowardsInteractionPoint:
+                animator.SetTrigger("Walk");
                 target = interactionPoint;
 /*                if (!isNPC_InteractionPointOccupied && !isNPC_InteractionCompleted && this.transform.position != target.transform.position)
                 {
@@ -225,6 +232,8 @@ public class NPC_navigation : MonoBehaviour
                 FindObjectOfType<NpcDialogueTracker>().yesButton.SetActive(true);
                 FindObjectOfType<NpcDialogueTracker>().noButton.SetActive(true);
                 FindObjectOfType<NpcDialogueTracker>().GetCurrentNpcData(GetComponentInParent<NPC_object>());
+                dialogueController.PlayDialogue();
+                animator.SetTrigger("Talk");
                 //npcResourceCostUpdater.QuestResourceRequirements();
                 /*                if (isNPC_InteractionCompleted)
                                 {
@@ -236,6 +245,7 @@ public class NPC_navigation : MonoBehaviour
                 break;
 
             case eNPCstate.MoveTowardsExitPoint:
+                animator.SetTrigger("Walk");
                 transform.parent.tag = "Untagged";
                 gameObject.tag = "Untagged";
                 FindObjectOfType<NpcDialogueTracker>().dialogueBox.SetActive(false);
@@ -254,6 +264,7 @@ public class NPC_navigation : MonoBehaviour
                 break;
 
             case eNPCstate.MoveTowardsDespawnPoint:
+                animator.SetTrigger("Walk");
                 target = despawnPoint;
                 break;
         }

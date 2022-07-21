@@ -2140,7 +2140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177210523523470521}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.12, y: -0.768, z: 0.186}
+  m_LocalPosition: {x: 0.062, y: -0.768, z: 0.186}
   m_LocalScale: {x: 0.965018, y: 0.965018, z: 0.965018}
   m_Children:
   - {fileID: 1178650323940409631}
@@ -2162,12 +2162,18 @@ Animator:
   m_GameObject: {fileID: 1177210523523470521}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 44202c79934aa8c45b2495a49b6e99b1, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e1cbbe6fb5c11a42bef307fb3803182, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'Root'\n\tTransform 'IndexFinger_02'\n\tTransform
+    'Elbow_R'\n\tTransform 'Finger_02'\n\tTransform 'Finger_03'\n\tTransform 'Ball_L'\n\tTransform
+    'Thumb_02'\n\tTransform 'Ball_R'\n\tTransform 'Clavicle_L'\n\tTransform 'Finger_01'\n\tand
+    more ...\n\tFrom animation clip 'Idle'\n\tFrom animation clip 'Walking'\n\tFrom
+    animation clip 'Talking'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -2251,7 +2257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6895889872384610108
 Transform:
   m_ObjectHideFlags: 0
@@ -2395,6 +2401,7 @@ Transform:
   m_Children:
   - {fileID: 1379253878282978515}
   - {fileID: 6895889872384610108}
+  - {fileID: 1127394899548054515}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2510,7 +2517,9 @@ MonoBehaviour:
   CurrentQuestGivingNPC: {fileID: 0}
   stoppingRange: 50
   stepBackDistance: 10
+  dialogueController: {fileID: 0}
   npcResourceCostUpdater: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!54 &4055989175947660000
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2527,3 +2536,89 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 0
+--- !u!1001 &589961438208672792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2836400453931071773}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.829
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7084738715715509862, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1535009568197690735, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 37192739280429521, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cee7a5983b187943adc589b9cb1f084, type: 2}
+    - target: {fileID: 619553152909040778, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_Name
+      value: AlienRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278090081552539398, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991939512424622614, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+--- !u!4 &1127394899548054515 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: efdca76bacb4a534cb1dfd5b11d0a9b3, type: 3}
+  m_PrefabInstance: {fileID: 589961438208672792}
+  m_PrefabAsset: {fileID: 0}

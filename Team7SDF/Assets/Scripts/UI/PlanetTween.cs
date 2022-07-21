@@ -5,15 +5,26 @@ using UnityEngine;
 public class PlanetTween : MonoBehaviour
 {
     public float spinTime;
-
-    private void Update()
+    private float rotate;
+    private float startPoint;
+    public void Start()
     {
-        StartCoroutine(PlanetSpin());
+        startPoint = 0;
+        rotate = 360;
+        LeanTween.rotate(gameObject, new Vector3(startPoint, rotate, 0), spinTime).setOnComplete(PlanetSpinLoopOne);
+    }
+    public void PlanetSpinLoopOne()
+    {
+        startPoint = 0;
+        rotate = 360;
+        LeanTween.rotate(gameObject, new Vector3(startPoint, rotate, 0), spinTime).setOnComplete(PlanetSpinLoopTwo);
     }
 
-    IEnumerator PlanetSpin()
+    public void PlanetSpinLoopTwo()
     {
-        LeanTween.rotate(gameObject, new Vector3(0, 360, 0), spinTime);
-        yield return new WaitForSeconds(spinTime);
+        startPoint = 0;
+        rotate = 360;
+        LeanTween.rotate(gameObject, new Vector3(startPoint, rotate, 0), spinTime).setOnComplete(PlanetSpinLoopOne);
     }
+
 }

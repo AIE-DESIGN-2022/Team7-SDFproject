@@ -18,6 +18,13 @@ MonoBehaviour:
   - Bryce
   factionName: 0
   NPC_type: 3
+  dialogueClips:
+  - {fileID: 8300000, guid: 63983a860bb457f47b12f92ae184dc68, type: 3}
+  - {fileID: 8300000, guid: a3d318f33c2e59547aaa21d8f81688a3, type: 3}
+  - {fileID: 8300000, guid: 8224350bba7491441b2668447bcab289, type: 3}
+  - {fileID: 8300000, guid: 74fb8b747a7bf4745a863e5d3ad2d7c6, type: 3}
+  - {fileID: 8300000, guid: 6ab32699a3ad06d49a2a7919b69a4dcd, type: 3}
+  - {fileID: 8300000, guid: e36b3e490c14243459e5af7864f1cf87, type: 3}
   NPC_typePrefab:
   - {fileID: 6017937369128084383, guid: 29d257f85ec7bda46b8ef7983785cdcf, type: 3}
   - {fileID: 6017937369128084383, guid: 529a9fc51e1cdf24db13667620c38e77, type: 3}

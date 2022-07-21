@@ -18,6 +18,12 @@ MonoBehaviour:
   - Thane
   factionName: 0
   NPC_type: 0
+  dialogueClips:
+  - {fileID: 8300000, guid: da9cb0a918c06d9459befbe3ceeca355, type: 3}
+  - {fileID: 8300000, guid: 711d2d74a332b1646a31a22aa29ec19f, type: 3}
+  - {fileID: 8300000, guid: d7894548c9832b94e8a7d67686130e63, type: 3}
+  - {fileID: 8300000, guid: a23102884f61f244296cb2e19fa1bc76, type: 3}
+  - {fileID: 8300000, guid: c13ac6a97deb4da41b499889159a1f17, type: 3}
   NPC_typePrefab:
   - {fileID: 6017937369128084383, guid: 09014824ed010234ea7b5692b55f2f7a, type: 3}
   - {fileID: 6017937369128084383, guid: d17c4b8b678c6d54587afc2109a4e7d9, type: 3}
