@@ -14,4 +14,11 @@ public class FinishYearButton : MonoBehaviour
     {
         waveManager.EndYear = true;
     }
+
+    public void StartYearConfrim()
+    {
+        waveManager.CanYearStart = true;
+    }
 }
+
+

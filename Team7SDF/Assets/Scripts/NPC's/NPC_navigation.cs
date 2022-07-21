@@ -91,7 +91,7 @@ public class NPC_navigation : MonoBehaviour
         {
             agent.isStopped = true;
             agent.destination = transform.position;
-           animator.SetTrigger("Idle");
+           animator.SetBool("Idle",true);
         }
 
     }
@@ -290,4 +290,12 @@ public class NPC_navigation : MonoBehaviour
         }
     }
     public NavMeshAgent navMeshAgent { get { return agent; } }
+
+    public void idleTrigger()
+    {
+        if(agent.isStopped == true)
+        {
+            animator.SetBool("Idle", true);
+        }
+    }
 }

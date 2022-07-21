@@ -12,6 +12,7 @@ public class NPC_WaveManager : MonoBehaviour
 
     public TextMeshProUGUI YearCountText;
 
+    public bool CanYearStart;
     public bool EndYear;
     private bool waveStarted = false;
     public int YearLoreCount = 2049;
@@ -36,6 +37,7 @@ public class NPC_WaveManager : MonoBehaviour
     void Start()
 
     {
+        CanYearStart = false;
         UpdateYearCountText();
         soundtrackController = FindObjectOfType<SoundtrackController>();
         npcDialogueTracker = FindObjectOfType<NpcDialogueTracker>();
@@ -48,20 +50,28 @@ public class NPC_WaveManager : MonoBehaviour
     void Update()
     {
         //CreateWave(waveCount);
-        CreateWave(waveCount);
-        if (waveStarted)
+        if (CanYearStart == true)
         {
-            SpawnWave();
+            CreateWave(waveCount);
+            if (waveStarted)
+            {
+                SpawnWave();
+
+            }
+            else
+            {
+                return;
+            }
+
+            CheckIfWaveFinished();
+            CheckIfYearFinished();
 
         }
-
-        CheckIfWaveFinished();
-        CheckIfYearFinished();
     }
 
     private void CreateWave(int waveNumber)
     {
-        if (LastWaveSpawned)
+        if (LastWaveSpawned && waveCount <=2)
         {
 
             nPCsToSpawn = 3;
