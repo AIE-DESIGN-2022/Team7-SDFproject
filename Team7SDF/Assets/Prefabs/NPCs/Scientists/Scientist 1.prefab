@@ -1052,6 +1052,25 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0.72845006, z: -0.0021360964}
     m_Extent: {x: 1.028469, y: 0.8313372, z: 0.25396478}
   m_DirtyAABB: 0
+--- !u!95 &7456620920415316803
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2162935949517463975}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e1cbbe6fb5c11a42bef307fb3803182, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2288562867623126274
 GameObject:
   m_ObjectHideFlags: 0
@@ -5845,6 +5864,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6c8433014aacb94dab3aa5b79476f90, type: 3}
+--- !u!1 &2162935949517463975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e6c8433014aacb94dab3aa5b79476f90, type: 3}
+  m_PrefabInstance: {fileID: 1352525851947965686}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1535615760101636893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e6c8433014aacb94dab3aa5b79476f90, type: 3}

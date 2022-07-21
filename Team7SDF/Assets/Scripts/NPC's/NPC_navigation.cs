@@ -47,6 +47,7 @@ public class NPC_navigation : MonoBehaviour
     public ResourceCostUpdater npcResourceCostUpdater;
 
     public Animator animator;
+    PlayerManager playerManager;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -62,6 +63,7 @@ public class NPC_navigation : MonoBehaviour
         despawnPoint = GameObject.FindGameObjectWithTag("Despawn");
         stepBack = transform.GetChild(0).gameObject; 
         waveManager = FindObjectOfType<NPC_WaveManager>();
+        playerManager = FindObjectOfType<PlayerManager>();
     }
     void Start()
     {
@@ -89,7 +91,9 @@ public class NPC_navigation : MonoBehaviour
         {
             agent.isStopped = true;
             agent.destination = transform.position;
+           animator.SetTrigger("Idle");
         }
+
     }
 
     private void NPCnavLogic()
@@ -139,14 +143,25 @@ public class NPC_navigation : MonoBehaviour
 
 
             if (!isNPC_active) return;
+            animator.SetTrigger("Walk");
+
             SetNPCstate(eNPCstate.Interaction);
             //FindObjectOfType<NpcDialogueTracker>().trackedNPC = CurrentQuestGivingNPC;
 
 
         }
+        else if (distanceToWaitPoint < interactionRange && nPC_state == eNPCstate.MoveTowardsWaitPoint && waveManager.isInteractingWithQuest == true)
+        {
+            animator.SetBool("Idle", true);
+        }
+        else
+        {
+            animator.SetBool("Idle", false);
 
 
-        if(nPC_state == eNPCstate.Interaction && isNPC_InteractionCompleted)
+        }
+
+        if (nPC_state == eNPCstate.Interaction && isNPC_InteractionCompleted)
         {
             SetNPCstate(eNPCstate.MoveTowardsExitPoint);
             waveManager.isInteractingWithQuest = false;
@@ -204,7 +219,7 @@ public class NPC_navigation : MonoBehaviour
         {
             case eNPCstate.MoveTowardsWaitPoint:
                 target = waitPoint;
-                animator.SetTrigger("Idle");
+                animator.SetTrigger("Walk");
                 /*                if (isNPC_InteractionPointOccupied && !isNPC_InteractionCompleted && this.transform.position != target.transform.position)
                                 {
                                     agent.isStopped = false;
@@ -234,6 +249,7 @@ public class NPC_navigation : MonoBehaviour
                 FindObjectOfType<NpcDialogueTracker>().GetCurrentNpcData(GetComponentInParent<NPC_object>());
                 dialogueController.PlayDialogue();
                 animator.SetTrigger("Talk");
+                //transform.LookAt(playerManager.transform);
                 //npcResourceCostUpdater.QuestResourceRequirements();
                 /*                if (isNPC_InteractionCompleted)
                                 {

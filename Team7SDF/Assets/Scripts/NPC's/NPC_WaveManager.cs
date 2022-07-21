@@ -11,8 +11,8 @@ public class NPC_WaveManager : MonoBehaviour
     public NpcDialogueTracker npcDialogueTracker;
 
     public TextMeshProUGUI YearCountText;
-    
 
+    public bool EndYear;
     private bool waveStarted = false;
     public int YearLoreCount = 2049;
     public int yearCount = 1;
@@ -80,6 +80,7 @@ public class NPC_WaveManager : MonoBehaviour
 
     private void SpawnWave()
     {
+        EndYear = false;
         if (waveStarted && spawnedNPCs < nPCsToSpawn)
         {
             spawnTimer += Time.deltaTime;
@@ -112,7 +113,7 @@ public class NPC_WaveManager : MonoBehaviour
 
     private void CheckIfYearFinished()
     {
-        if (waveCount == 3 && spawnedNPCs == nPCsToSpawn && currentWave.Count == 0)
+        if (waveCount == 3 && spawnedNPCs == nPCsToSpawn && currentWave.Count == 0 && EndYear == true)
         {
             yearCount++;
             YearLoreCount++;
