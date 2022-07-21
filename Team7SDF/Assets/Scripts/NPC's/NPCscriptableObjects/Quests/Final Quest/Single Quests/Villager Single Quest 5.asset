@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Villager Single Quest 5
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
+  questTitle: Villager SQ - dying daughter
+  questDescription: WE NEED YOUR HELP! My daughter is dying, and I need some more
+    fuel in order to get her medical attention! Can you please help me save my daughter?
   chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  alloyRequirment: 36
+  fuelRequirment: 200
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0
