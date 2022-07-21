@@ -18,7 +18,7 @@ MonoBehaviour:
     my product? '
   chipRequirment: 8
   alloyRequirment: 29
-  fuelRequirment: 150
+  fuelRequirment: 75
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0
