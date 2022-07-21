@@ -27,6 +27,7 @@ public class ShopManager : MonoBehaviour
         sellShop.SetActive(false);
 
     }
+
     public void CheckButtonsBuy()
     {
         foreach (ResourceButton button in resourceButtons)
@@ -152,4 +153,6 @@ public class ShopManager : MonoBehaviour
         CheckButtonsBuy();
         CheckButtonsSell();
     }
+
+
 }
