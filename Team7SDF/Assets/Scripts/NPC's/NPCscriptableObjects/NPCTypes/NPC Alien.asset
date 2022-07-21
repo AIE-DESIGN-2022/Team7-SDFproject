@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4806e592a852dba4cb9508131fae72b2, type: 3}
-  m_Name: NPC Villager
+  m_Name: NPC Alien
   m_EditorClassIdentifier: 
   NPC_name:
   - Albus
   - Carter
   - Thane
   factionName: 0
-  NPC_type: 0
+  NPC_type: 4
   dialogueClips:
   - {fileID: 8300000, guid: da9cb0a918c06d9459befbe3ceeca355, type: 3}
   - {fileID: 8300000, guid: 711d2d74a332b1646a31a22aa29ec19f, type: 3}
@@ -25,9 +25,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a23102884f61f244296cb2e19fa1bc76, type: 3}
   - {fileID: 8300000, guid: c13ac6a97deb4da41b499889159a1f17, type: 3}
   NPC_typePrefab:
-  - {fileID: 6017937369128084383, guid: 09014824ed010234ea7b5692b55f2f7a, type: 3}
-  - {fileID: 6017937369128084383, guid: d17c4b8b678c6d54587afc2109a4e7d9, type: 3}
-  - {fileID: 6017937369128084383, guid: e800823ba4c2cd341a6c597488a8a178, type: 3}
+  - {fileID: 6017937369128084383, guid: 9e4643b7051eec8498a1e9a2991be5f8, type: 3}
+  - {fileID: 6017937369128084383, guid: 8867e4de003004144ba98d576d721d4e, type: 3}
+  - {fileID: 6017937369128084383, guid: 7cf62c7aad3f325458b1fdf0eb1105e7, type: 3}
   quests:
   - {fileID: 11400000, guid: 1f513fb291996c848b160be67e94632e, type: 2}
   - {fileID: 11400000, guid: 474a32ebfe89e064796879885e3040e1, type: 2}

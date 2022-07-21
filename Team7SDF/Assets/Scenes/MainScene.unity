@@ -1143,11 +1143,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.48955494
+      value: 0.49409628
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_Pivot.y
-      value: 1.1136801
+      value: 1.1001927
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1159,11 +1159,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 939.9455
+      value: 948.66486
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649339249656, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1007.9564
+      value: 995.7493
       objectReference: {fileID: 0}
     - target: {fileID: 7660992649475255877, guid: eb5552f468682d94ebc4ada5be15108a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2810,6 +2810,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 31c9994bc08c50545b1d29b4f5e96054, type: 2}
   - {fileID: 11400000, guid: 340959434028f4e42b101a975af7009d, type: 2}
   - {fileID: 11400000, guid: b48b11495319eea4883e020f081e86fa, type: 2}
+  - {fileID: 11400000, guid: 787c7640a6941444eaef9075a29cb1a5, type: 2}
   currentNPC: {fileID: 0}
   NPC_prefab: {fileID: 5785598500946376725, guid: 07162208d4372a34eb8aae00166b9bda, type: 3}
   spawnPosition: {fileID: 1194635518}

@@ -18,6 +18,9 @@ MonoBehaviour:
   - Victor
   factionName: 1
   NPC_type: 1
+  dialogueClips:
+  - {fileID: 8300000, guid: 873c9620ffe303f4f9b4182554058e7a, type: 3}
+  - {fileID: 8300000, guid: 1b387a15e3ab4d540b8031c170f48cf1, type: 3}
   NPC_typePrefab:
   - {fileID: 6017937369128084383, guid: 9750bc0a9a15caf43827c9c3fa860a1e, type: 3}
   - {fileID: 6017937369128084383, guid: 90768cbcbf1754c429e4b7bea509d4cf, type: 3}

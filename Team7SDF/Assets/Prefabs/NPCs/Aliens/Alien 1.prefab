@@ -32,7 +32,7 @@ GameObject:
   - component: {fileID: 1761311053624013968}
   - component: {fileID: 6841159630592058916}
   m_Layer: 0
-  m_Name: Alien 1 Mesh
+  m_Name: Alien 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -18,6 +18,12 @@ MonoBehaviour:
   - Lyta
   factionName: 1
   NPC_type: 2
+  dialogueClips:
+  - {fileID: 8300000, guid: 2baa119397c381447acd7f26cefd2f2f, type: 3}
+  - {fileID: 8300000, guid: c13ac6a97deb4da41b499889159a1f17, type: 3}
+  - {fileID: 8300000, guid: da9cb0a918c06d9459befbe3ceeca355, type: 3}
+  - {fileID: 8300000, guid: 9c9b04b235edbf14f9cb0126acdb1d74, type: 3}
+  - {fileID: 8300000, guid: 270837ffa4c783b4c8489340d69563e1, type: 3}
   NPC_typePrefab:
   - {fileID: 6017937369128084383, guid: 850defa0c6207374a8c6201a4089bfed, type: 3}
   - {fileID: 6017937369128084383, guid: 7823044ede219d3439b3beab11b762a6, type: 3}

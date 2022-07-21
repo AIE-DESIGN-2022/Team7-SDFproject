@@ -43,6 +43,7 @@ public class NPC_navigation : MonoBehaviour
     private NavMeshAgent agent;
     private NPC_WaveManager waveManager;
 
+    public DialogueController dialogueController;
     public ResourceCostUpdater npcResourceCostUpdater;
     private void Awake()
     {
@@ -50,6 +51,7 @@ public class NPC_navigation : MonoBehaviour
 
         npcResourceCostUpdater = FindObjectOfType<ResourceCostUpdater>();
 
+        dialogueController = GetComponentInParent<DialogueController>();
         spawnPoint = GameObject.FindGameObjectWithTag("Spawn");
         waitPoint = GameObject.FindGameObjectWithTag("Wait");
         interactionPoint = GameObject.FindGameObjectWithTag("Interaction");
@@ -225,6 +227,7 @@ public class NPC_navigation : MonoBehaviour
                 FindObjectOfType<NpcDialogueTracker>().yesButton.SetActive(true);
                 FindObjectOfType<NpcDialogueTracker>().noButton.SetActive(true);
                 FindObjectOfType<NpcDialogueTracker>().GetCurrentNpcData(GetComponentInParent<NPC_object>());
+                dialogueController.PlayDialogue();
                 //npcResourceCostUpdater.QuestResourceRequirements();
                 /*                if (isNPC_InteractionCompleted)
                                 {

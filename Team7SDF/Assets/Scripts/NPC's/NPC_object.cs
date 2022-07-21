@@ -10,6 +10,7 @@ public class NPC_object : MonoBehaviour
     public FactionType factionText;
     public GameObject PrefabNPC;
     public QuestsScriptableObject currentQuest;
+    public AudioClip currentDialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class NPC_object : MonoBehaviour
         nameText = currentNpc.NPC_name[Random.Range(0, currentNpc.NPC_name.Length)];
         factionText = currentNpc.factionName;
         currentQuest = currentNpc.quests[Random.Range(0, currentNpc.quests.Length)];
+        currentDialogue = currentNpc.dialogueClips[Random.Range(0, currentNpc.dialogueClips.Length)];
         PrefabNPC = currentNpc.NPC_typePrefab[Random.Range(0, currentNpc.NPC_typePrefab.Length)];
         Instantiate(PrefabNPC, transform.position, transform.rotation, transform);
 
