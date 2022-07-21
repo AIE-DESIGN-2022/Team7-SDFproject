@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Villager Single Quest 1
   m_EditorClassIdentifier: 
   questTitle: Son needs medical attention
-  questDescription: Help! My son got in a fight with a insectaplant and now his arm
-    is almost torn off! I desperately need 50 chips to pay for his medical bills!
+  questDescription: Help! My son got in a fight with an Insectaplant and now his
+    arm is almost torn off! I desperately need 50 chips to pay for his medical bills!
     Can you help me?
   chipRequirment: 50
   alloyRequirment: 0
