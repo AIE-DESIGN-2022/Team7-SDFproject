@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Military Single Quest 5
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
+  questTitle: Military SQ - give fuel to front line troops
+  questDescription: Can you please provide us with more fuel in order to travel to
+    the front lines of our battle with the Scattles?
   chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  alloyRequirment: 20
+  fuelRequirment: 75
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

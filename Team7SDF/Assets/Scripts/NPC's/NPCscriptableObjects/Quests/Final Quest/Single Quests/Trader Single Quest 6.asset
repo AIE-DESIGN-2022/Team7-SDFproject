@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Trader Single Quest 6
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
+  questTitle: Trader SQ - trading plants and fuel for kid
+  questDescription: 'Wow your system is quite fantastic, I would love to take home
+    some of your plants to show my daughters. Would you trade me some Fuel and plants
+    for some happiness? '
   chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  alloyRequirment: 3
+  fuelRequirment: 26
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

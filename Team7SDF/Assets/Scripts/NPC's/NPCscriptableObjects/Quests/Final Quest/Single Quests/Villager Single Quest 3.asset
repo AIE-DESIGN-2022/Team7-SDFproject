@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Villager Single Quest 3
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  questTitle: Villager SQ - inventor
+  questDescription: 'I have this brilliant invention that I would like to sell to
+    other galaxies but need some funding and resources to do so! Will you endorse
+    my product? '
+  chipRequirment: 8
+  alloyRequirment: 29
+  fuelRequirment: 150
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

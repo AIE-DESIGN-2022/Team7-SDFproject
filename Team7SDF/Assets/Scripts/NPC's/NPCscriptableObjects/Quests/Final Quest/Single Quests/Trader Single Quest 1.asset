@@ -18,7 +18,7 @@ MonoBehaviour:
     from my travels!"
   chipRequirment: 0
   alloyRequirment: 0
-  fuelRequirment: 7
+  fuelRequirment: 20
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

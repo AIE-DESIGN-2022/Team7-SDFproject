@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Researcher Single Quest 4
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
-  chipRequirment: 0
+  questTitle: Research SQ - Southern species
+  questDescription: There is a new species that we have located on the Southern side
+    of our planet and we would love to research it! Would you spare us some fuel
+    and credits in order to research it?
+  chipRequirment: 6
   alloyRequirment: 0
-  fuelRequirment: 0
+  fuelRequirment: 50
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

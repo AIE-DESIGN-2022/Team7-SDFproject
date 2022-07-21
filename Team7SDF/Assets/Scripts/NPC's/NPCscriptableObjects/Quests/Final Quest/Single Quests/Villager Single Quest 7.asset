@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Villager Single Quest 7
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  questTitle: Villager SQ - bless a marriage
+  questDescription: Your majesty, will you please bless my new baby and his future?
+  chipRequirment: 5
+  alloyRequirment: 49
+  fuelRequirment: 69
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

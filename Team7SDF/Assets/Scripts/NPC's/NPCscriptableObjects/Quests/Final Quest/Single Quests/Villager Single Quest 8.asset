@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360580e1b7a44834bbc1e4b18bed8690, type: 3}
   m_Name: Villager Single Quest 8
   m_EditorClassIdentifier: 
-  questTitle: 
-  questDescription: 
-  chipRequirment: 0
-  alloyRequirment: 0
-  fuelRequirment: 0
+  questTitle: Villager SQ - wants a job
+  questDescription: Hello there my lovely ruler!! I only ask that I may have a job
+    assisting you on this lovely spacecraft! Even if I have to empty the remnants
+    of your lavatories. Anything to serve you!
+  chipRequirment: 1
+  alloyRequirment: 1
+  fuelRequirment: 3
   populationConsequence: 0
   happinessConsequence: 0
   researchConsequence: 0

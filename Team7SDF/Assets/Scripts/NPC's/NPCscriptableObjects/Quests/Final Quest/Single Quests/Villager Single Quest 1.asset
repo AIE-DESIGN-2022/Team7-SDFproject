@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questTitle: Son needs medical attention
   questDescription: Help! My son got in a fight with a insectaplant and now his arm
-    is almost torn off! I desperately need 100 chips to pay for his medical bills!
+    is almost torn off! I desperately need 50 chips to pay for his medical bills!
     Can you help me?
   chipRequirment: 50
   alloyRequirment: 0
