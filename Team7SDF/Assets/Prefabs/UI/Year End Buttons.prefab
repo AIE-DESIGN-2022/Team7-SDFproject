@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7655403292481469706}
   - component: {fileID: 5291147422096901135}
   - component: {fileID: 6658749877665918903}
+  - component: {fileID: 7062935682293892470}
   m_Layer: 0
   m_Name: Shop Button
   m_TagString: Untagged
@@ -145,6 +146,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7062935682293892470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600377410345202747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &2516039161942966707
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +172,7 @@ GameObject:
   - component: {fileID: 3128281596220998056}
   - component: {fileID: 3437793481776589967}
   - component: {fileID: 5862919491712570258}
+  - component: {fileID: 9096906252077743784}
   m_Layer: 0
   m_Name: Next Year Button
   m_TagString: Untagged
@@ -278,6 +294,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &9096906252077743784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2516039161942966707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &5969267291293942171
 GameObject:
   m_ObjectHideFlags: 0
