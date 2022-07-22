@@ -9,6 +9,7 @@ public class NPC_WaveManager : MonoBehaviour
     public NPC_Waves nPC_Waves;
     public NPC_manager nPC_Manager;
     public NpcDialogueTracker npcDialogueTracker;
+    public CameraTransition cameraTransition;
 
     public TextMeshProUGUI YearCountText;
 
@@ -39,6 +40,7 @@ public class NPC_WaveManager : MonoBehaviour
     {
         CanYearStart = false;
         UpdateYearCountText();
+        cameraTransition = FindObjectOfType<CameraTransition>();
         soundtrackController = FindObjectOfType<SoundtrackController>();
         npcDialogueTracker = FindObjectOfType<NpcDialogueTracker>();
         LastWaveSpawned = true;
@@ -63,15 +65,15 @@ public class NPC_WaveManager : MonoBehaviour
                 return;
             }
 
-            CheckIfWaveFinished();
-            CheckIfYearFinished();
 
         }
+        CheckIfYearFinished();
+        CheckIfWaveFinished();
     }
 
     private void CreateWave(int waveNumber)
     {
-        if (LastWaveSpawned && waveCount <=2)
+        if (LastWaveSpawned && waveCount <= 2)
         {
 
             nPCsToSpawn = 3;
@@ -121,10 +123,11 @@ public class NPC_WaveManager : MonoBehaviour
         }
     }
 
-    private void CheckIfYearFinished()
+    public void CheckIfYearFinished()
     {
         if (waveCount == 3 && spawnedNPCs == nPCsToSpawn && currentWave.Count == 0 && EndYear == true)
         {
+            Debug.Log("Yearending");
             yearCount++;
             YearLoreCount++;
             waveCount = 0;
@@ -133,6 +136,7 @@ public class NPC_WaveManager : MonoBehaviour
 
             //pause for end of year statistics
         }
+
     }
     public void NPCfinished(GameObject npc)
     {
@@ -144,7 +148,7 @@ public class NPC_WaveManager : MonoBehaviour
     public void UpdateYearCountText()
     {
         YearCountText.text = YearLoreCount.ToString();
-       
+
 
     }
 }
