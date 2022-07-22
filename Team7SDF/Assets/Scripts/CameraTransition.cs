@@ -22,8 +22,8 @@ public class CameraTransition : MonoBehaviour
     {
         if (canTransitionToGreenGuy)
         {
-
-        Transition();
+            GetComponent<AudioController>().PlayClip();
+            Transition();
         }
     }
 
@@ -31,9 +31,10 @@ public class CameraTransition : MonoBehaviour
     {
         if (nPC_WaveManager.waveCount == 3 && nPC_WaveManager.LastWaveSpawned == true)
         {
+            
             mainGameCamera.SetActive(false);
             annoyingGreenGuyCamera.SetActive(true);
-            canTransitionToGreenGuy = false;    
+            canTransitionToGreenGuy = false;
         }
     }
 

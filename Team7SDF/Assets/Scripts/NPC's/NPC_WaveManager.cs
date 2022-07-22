@@ -20,6 +20,7 @@ public class NPC_WaveManager : MonoBehaviour
     public int yearCount = 1;
     public int waveCount = 0;
 
+    public GameObject signalLight;
 
     public float spawnRate = 0;
     private float spawnTimer = 0;
@@ -34,6 +35,8 @@ public class NPC_WaveManager : MonoBehaviour
     public List<GameObject> currentWave = new List<GameObject>();
     public NPC_Waves[] NPC_Waves;
     public bool isInteractingWithQuest;
+
+    public ColourControl colourControl;
     // Start is called before the first frame update
     void Start()
 
@@ -46,6 +49,7 @@ public class NPC_WaveManager : MonoBehaviour
         LastWaveSpawned = true;
         NPC_Waves = (NPC_Waves[])Resources.LoadAll<NPC_Waves>("");
         nPC_Manager = FindObjectOfType<NPC_manager>();
+        colourControl = FindObjectOfType<ColourControl>();
     }
 
     // Update is called once per frame
@@ -67,14 +71,21 @@ public class NPC_WaveManager : MonoBehaviour
 
 
         }
+
+        if (spawnedNPCs == 3)
+        {
+            colourControl.SetColourRed();
+        }
         CheckIfYearFinished();
         CheckIfWaveFinished();
     }
 
-    private void CreateWave(int waveNumber)
+    public void CreateWave(int waveNumber)
     {
         if (LastWaveSpawned && waveCount <= 2)
         {
+            colourControl.SetColourGreen();
+            GetComponent<AudioController>().PlayClip();
 
             nPCsToSpawn = 3;
             spawnedNPCs = 0;
@@ -82,8 +93,8 @@ public class NPC_WaveManager : MonoBehaviour
             waveCount++;
             //Debug.Log("Wave created");
             LastWaveSpawned = false;
+            
         }
-
     }
     /* private int NumberOfNPCs(int waveNumber)
      {
@@ -103,9 +114,8 @@ public class NPC_WaveManager : MonoBehaviour
                 spawnTimer = 0;
                 //Debug.Log("Wave Spawned");
             }
-
+            
         }
-
     }
 
 
@@ -118,8 +128,6 @@ public class NPC_WaveManager : MonoBehaviour
             //Debug.Log("Wave Finished Spawning NPCs");
             LastWaveSpawned = true;
             currentWave.Clear();
-
-
         }
     }
 
@@ -136,7 +144,6 @@ public class NPC_WaveManager : MonoBehaviour
 
             //pause for end of year statistics
         }
-
     }
     public void NPCfinished(GameObject npc)
     {
@@ -148,7 +155,5 @@ public class NPC_WaveManager : MonoBehaviour
     public void UpdateYearCountText()
     {
         YearCountText.text = YearLoreCount.ToString();
-
-
     }
 }

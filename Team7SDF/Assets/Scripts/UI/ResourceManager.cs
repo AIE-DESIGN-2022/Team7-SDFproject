@@ -86,11 +86,11 @@ public class ResourceManager : MonoBehaviour
 
     public void populationCountTextUI()
     {
-        populationCountText.text = populationCount.ToString();
+        populationCountText.text = populationCount.ToString() + "m";
     }
     public void happinessPercentCountTextUI()
     {
-        happinessPercentCountText.text = happinessPercentCount.ToString();
+        happinessPercentCountText.text = happinessPercentCount.ToString() + "%";
     }
     public void currencyCountTextUI()
     {
