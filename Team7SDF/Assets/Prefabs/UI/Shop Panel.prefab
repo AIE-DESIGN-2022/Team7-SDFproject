@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6547974330691321065}
   - component: {fileID: 4616840549293500367}
   - component: {fileID: 2243024827460626443}
+  - component: {fileID: 482544165375335423}
   m_Layer: 5
   m_Name: Buy Button
   m_TagString: Untagged
@@ -139,6 +140,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &482544165375335423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153705358047177905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &226646776205235290
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +167,7 @@ GameObject:
   - component: {fileID: 400440989004898538}
   - component: {fileID: 5766026397497409525}
   - component: {fileID: 329332891431720205}
+  - component: {fileID: 7778806449203442768}
   m_Layer: 5
   m_Name: Sell Button
   m_TagString: Untagged
@@ -278,6 +294,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7778806449203442768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226646776205235290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &318428300462364342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +1779,7 @@ GameObject:
   - component: {fileID: 8027713350998478279}
   - component: {fileID: 3398167486534506973}
   - component: {fileID: 1407579889202395220}
+  - component: {fileID: 2912790104883294557}
   m_Layer: 5
   m_Name: Buy Button
   m_TagString: Untagged
@@ -1875,6 +1906,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2912790104883294557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961571555985697314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &2032629189388763317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2929,6 +2974,7 @@ GameObject:
   - component: {fileID: 1072200435340291479}
   - component: {fileID: 1232381741509678189}
   - component: {fileID: 2161273083695330006}
+  - component: {fileID: 4960441100415796579}
   m_Layer: 5
   m_Name: Sell Button
   m_TagString: Untagged
@@ -3055,6 +3101,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4960441100415796579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3098993746278950462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &3106751555825015307
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,6 +3128,7 @@ GameObject:
   - component: {fileID: 3229826002131434858}
   - component: {fileID: 276187264955298290}
   - component: {fileID: 1325164953409894346}
+  - component: {fileID: 8159202582851251886}
   m_Layer: 5
   m_Name: Buy Button
   m_TagString: Untagged
@@ -3194,6 +3255,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8159202582851251886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106751555825015307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &3141811344766944873
 GameObject:
   m_ObjectHideFlags: 0
@@ -3320,6 +3395,7 @@ GameObject:
   - component: {fileID: 8586644746665668825}
   - component: {fileID: 6128691289764452511}
   - component: {fileID: 8682427352944949123}
+  - component: {fileID: 6861565220549742662}
   m_Layer: 5
   m_Name: Sell Button
   m_TagString: Untagged
@@ -3446,6 +3522,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6861565220549742662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3182977910498031451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &3209400956462025135
 GameObject:
   m_ObjectHideFlags: 0
@@ -4643,6 +4733,7 @@ GameObject:
   - component: {fileID: 6070966546481112304}
   - component: {fileID: 361267584237229354}
   - component: {fileID: 9005660553334562052}
+  - component: {fileID: 4221595063161108347}
   m_Layer: 5
   m_Name: Sell Button
   m_TagString: Untagged
@@ -4769,6 +4860,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4221595063161108347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3971072525158131462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &4037522149140620567
 GameObject:
   m_ObjectHideFlags: 0
@@ -5465,6 +5570,7 @@ GameObject:
   - component: {fileID: 7625262884468757900}
   - component: {fileID: 1285809942867356}
   - component: {fileID: 1066659155523791865}
+  - component: {fileID: 1884081964344974157}
   m_Layer: 5
   m_Name: Sell Button
   m_TagString: Untagged
@@ -5591,6 +5697,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1884081964344974157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4804286078517590591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &4839409432640772484
 GameObject:
   m_ObjectHideFlags: 0
@@ -6871,6 +6991,7 @@ GameObject:
   - component: {fileID: 785181177983661193}
   - component: {fileID: 8660730695130761766}
   - component: {fileID: 7234163178497176748}
+  - component: {fileID: 9204542391731619682}
   m_Layer: 5
   m_Name: Buy Button
   m_TagString: Untagged
@@ -6997,6 +7118,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9204542391731619682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724402989081612159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &5850644069731344481
 GameObject:
   m_ObjectHideFlags: 0
@@ -7314,6 +7449,7 @@ GameObject:
   - component: {fileID: 7173492204681162024}
   - component: {fileID: 1896002060101686275}
   - component: {fileID: 912003084285173225}
+  - component: {fileID: 4568479950791918439}
   m_Layer: 5
   m_Name: Buy Button
   m_TagString: Untagged
@@ -7440,6 +7576,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4568479950791918439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6003798606341566414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &6138940929131618374
 GameObject:
   m_ObjectHideFlags: 0
@@ -8008,6 +8158,7 @@ GameObject:
   - component: {fileID: 8802237120708444670}
   - component: {fileID: 5193492111308005978}
   - component: {fileID: 5948625575455433391}
+  - component: {fileID: 5581335132965603492}
   m_Layer: 5
   m_Name: Buy Button
   m_TagString: Untagged
@@ -8134,6 +8285,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5581335132965603492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6453028651286353811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &6507396208634280264
 GameObject:
   m_ObjectHideFlags: 0
@@ -8222,6 +8387,7 @@ GameObject:
   - component: {fileID: 859159819636198476}
   - component: {fileID: 6738397895626653733}
   - component: {fileID: 6151372674789859344}
+  - component: {fileID: 5993466472276002013}
   m_Layer: 5
   m_Name: Buy Button
   m_TagString: Untagged
@@ -8348,6 +8514,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5993466472276002013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6630838873893029327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &6761909232436287595
 GameObject:
   m_ObjectHideFlags: 0
@@ -8497,6 +8677,7 @@ GameObject:
   - component: {fileID: 5397501929467532526}
   - component: {fileID: 3007062362437140403}
   - component: {fileID: 3326874848627199107}
+  - component: {fileID: 6558476325665640638}
   m_Layer: 5
   m_Name: Sell Button
   m_TagString: Untagged
@@ -8623,6 +8804,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6558476325665640638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797464893590285003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &6970227804673030957
 GameObject:
   m_ObjectHideFlags: 0
@@ -8808,6 +9003,7 @@ GameObject:
   - component: {fileID: 264470174674376986}
   - component: {fileID: 39922540039503517}
   - component: {fileID: 7985063288834055688}
+  - component: {fileID: 6834321661929584552}
   m_Layer: 5
   m_Name: Sell Button
   m_TagString: Untagged
@@ -8934,6 +9130,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6834321661929584552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6999020612127229014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &7020379031307087498
 GameObject:
   m_ObjectHideFlags: 0
@@ -9153,6 +9363,7 @@ GameObject:
   - component: {fileID: 7585533815028211578}
   - component: {fileID: 295190237935092354}
   - component: {fileID: 6420981611651071767}
+  - component: {fileID: 6561201995127234732}
   m_Layer: 5
   m_Name: Sell Button
   m_TagString: Untagged
@@ -9279,6 +9490,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6561201995127234732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7203658023834762241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &7290547761056279941
 GameObject:
   m_ObjectHideFlags: 0
@@ -10019,6 +10244,7 @@ GameObject:
   - component: {fileID: 204882147087287125}
   - component: {fileID: 8863714328911229491}
   - component: {fileID: 6933507763676028010}
+  - component: {fileID: 3949209001606339008}
   m_Layer: 5
   m_Name: Buy Button
   m_TagString: Untagged
@@ -10145,6 +10371,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3949209001606339008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473625909645610047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &7508173478336248097
 GameObject:
   m_ObjectHideFlags: 0
@@ -10670,6 +10910,7 @@ GameObject:
   - component: {fileID: 7847564684791991187}
   - component: {fileID: 4557683179801670278}
   - component: {fileID: 9198604967179419598}
+  - component: {fileID: 6280251896410674267}
   m_Layer: 5
   m_Name: Sell Button
   m_TagString: Untagged
@@ -10796,6 +11037,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6280251896410674267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8142958040858096991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &8167453853947265123
 GameObject:
   m_ObjectHideFlags: 0
@@ -10809,6 +11064,7 @@ GameObject:
   - component: {fileID: 212055430370475786}
   - component: {fileID: 5870080125899808592}
   - component: {fileID: 852758677339468256}
+  - component: {fileID: 5807953275184167668}
   m_Layer: 5
   m_Name: Buy Button
   m_TagString: Untagged
@@ -10935,6 +11191,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5807953275184167668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8167453853947265123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05ca4436e4a6d4599fc4710b369eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &8195428123253747783
 GameObject:
   m_ObjectHideFlags: 0
